@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/xml_ic_menu_log" android:id="@id/menu_filter_log" android:orderInCategory="11" android:title="@string/l_log" android:showAsAction="always|withText" />
+</menu>

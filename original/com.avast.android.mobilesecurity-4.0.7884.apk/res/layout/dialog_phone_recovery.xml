@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/content_marginHorizontal" android:paddingRight="@dimen/content_marginHorizontal" android:paddingBottom="@dimen/content_marginVertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="center" android:id="@id/recovery_contact_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:text="@string/l_filter_add_from_contactlist" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_or" />
+        <EditText android:id="@id/recovery_custom_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical_special_or" android:hint="@string/pref_password_activating_pin_phone_number" android:inputType="phone" />
+    </LinearLayout>
+</ScrollView>

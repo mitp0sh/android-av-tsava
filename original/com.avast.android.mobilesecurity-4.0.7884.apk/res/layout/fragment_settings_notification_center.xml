@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_notification_type" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsNotificationType" avast:rowTitle="_chilli@string/pref_notification_type_title" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_disable_advisory_notifications" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gDisableAdvisoryNotifications" avast:rowTitle="_chilli@string/pref_disable_advisory_notifications" avast:rowSubTitle="_chilli@string/pref_disable_advisory_notifications_hint" avast:rowDefaultValue="false" />
+        <include layout="@layout/row_line_separator" />
+    </LinearLayout>
+</ScrollView>

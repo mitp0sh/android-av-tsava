@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/part_breadcrumbs" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_trafficinfo_enable" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsTrafficInfoEnabled" avast:rowTitle="_chilli@string/l_trafficinfo_enable" avast:rowSubTitle="_chilli@string/l_trafficinfo_enable_desc" avast:rowDAO="none" />
+            <include layout="@layout/row_line_separator_short" />
+            <com.avast.android.mobilesecurity.ui.widget.DayButtonRow android:id="@id/r_trafficinfo_date_selection" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="trafficInfoDay" avast:rowTitle="_chilli@string/l_trafficinfo_day" avast:rowSubTitle="_chilli@string/l_trafficinfo_day_desc" avast:rowDefaultValue="1" avast:rowDAO="none" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

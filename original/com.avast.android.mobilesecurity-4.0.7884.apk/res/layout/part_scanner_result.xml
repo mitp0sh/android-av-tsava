@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/result_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/stats_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/scanner_result_title_textSize" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowDx="0.0" android:shadowDy="0.0" />
+    <TextView android:textSize="@dimen/scanner_result_subtitle_textSize" android:id="@id/result_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/scanner_subtitle_marginTop" android:shadowDx="0.0" android:shadowDy="0.0" android:fontFamily="sans-serif-light" />
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/result_button" android:layout_width="fill_parent" android:layout_height="@dimen/scanner_buttons_height" android:layout_marginLeft="@dimen/scanner_buttons_marginHorizontal" android:layout_marginTop="@dimen/scanner_buttons_margin" android:layout_marginRight="@dimen/scanner_buttons_marginHorizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/promo_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginTop="@dimen/scanner_buttons_margin" android:layout_marginRight="@dimen/content_marginHorizontal" />
+</LinearLayout>

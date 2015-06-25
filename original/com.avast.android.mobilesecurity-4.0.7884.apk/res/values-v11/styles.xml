@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AvastActionBar" parent="@style/Widget.Sherlock.ActionBar.Solid">
+        <item name="android:background">@color/bg_actionbar</item>
+        <item name="android:displayOptions">homeAsUp|showHome|useLogo</item>
+    </style>
+    <style name="SDL.Progress" parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/grid_4</item>
+        <item name="android:layout_marginTop">@dimen/grid_4</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/grid_4</item>
+        <item name="android:layout_marginStart">@dimen/grid_4</item>
+        <item name="android:layout_marginEnd">0.0dip</item>
+    </style>
+    <style name="Sherlock.__Theme" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Sherlock.__Theme.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.Avast" parent="@style/Theme.PlatformIndependent">
+        <item name="android:fastScrollThumbDrawable">@drawable/xml_fastscroll_thumb_holo</item>
+    </style>
+    <style name="com_mixpanel_android_SurveyActivityTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/com_mixpanel_android_SurveyActivityAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

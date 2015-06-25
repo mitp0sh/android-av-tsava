@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/content_marginHorizontal" android:paddingEnd="@dimen/content_marginHorizontal">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/msg_db_update_failed_desc" />
+        <Button android:id="@id/db_update_failed_delete_db_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalBig" android:text="_chilli@string/l_db_update_failed_delete_db_button" style="?buttonStyleGreen" />
+        <Button android:id="@id/db_update_failed_settings_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalBig" android:text="_chilli@string/l_db_update_failed_settings_button" style="?buttonStyleGray" />
+    </LinearLayout>
+</ScrollView>

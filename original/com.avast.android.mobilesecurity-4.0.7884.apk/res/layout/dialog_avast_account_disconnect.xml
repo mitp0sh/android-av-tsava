@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_marginBottom="@dimen/content_marginVertical" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_avast_account_disconnect_confirmation_text" style="@style/SDL.TextView.Message" />
+        <TextView android:textColor="@color/text_problem" android:id="@id/l_disconnect_warning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_avast_account_disconnect_backup_warning" style="@style/SDL.TextView.Message" />
+    </LinearLayout>
+</ScrollView>

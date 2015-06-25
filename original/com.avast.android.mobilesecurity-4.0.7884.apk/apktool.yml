@@ -1,0 +1,18 @@
+version: 2.0.0-RC4
+apkFileName: com.avast.android.mobilesecurity-4.0.7884-b70296b613d7b3630464c63ac0db4a4f2268653a.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '7884'
+  versionName: 4.0.7884
+compressionType: false
+unknownFiles:
+  com/avast/android/generic/ui/widget/ChilliCustomViewsModule.dot: '8'
+  com/avast/android/dagger/ContextModule.dot: '8'

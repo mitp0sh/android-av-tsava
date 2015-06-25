@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:id="@id/campaign_frame" android:background="#ff4a4f5d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontalSmall" android:layout_marginTop="@dimen/content_marginHorizontalSmall" android:layout_marginRight="@dimen/content_marginHorizontalSmall" android:layout_marginBottom="@dimen/content_marginHorizontalSmall" android:layout_marginStart="@dimen/content_marginHorizontalSmall" android:layout_marginEnd="@dimen/content_marginHorizontalSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

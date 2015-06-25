@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_scanner_folders_to_scan" android:title="@string/l_scanner_folders_to_scan" android:showAsAction="never" />
+    <item android:id="@id/menu_scanner_auto_scan" android:title="@string/l_automatic_scan" android:showAsAction="never" />
+    <item android:id="@id/menu_scanner_results" android:title="@string/l_scan_results" android:showAsAction="never" />
+    <item android:id="@id/menu_scanner_ignore_list" android:title="@string/l_scanner_ignorelist" android:showAsAction="never" />
+</menu>

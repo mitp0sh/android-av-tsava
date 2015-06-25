@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rating_thumb" />
+            <TextView android:textSize="30.0sp" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/satisfaction_like" />
+            <TextView android:textSize="28.0sp" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/satisfaction_avast_security" />
+            <TextView android:textSize="22.0sp" android:textColor="@color/text_subtitle" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" android:text="@string/satisfaction_let_us_know" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <Button android:textSize="@dimen/font_medium" android:id="@id/satisfaction_leave_rating" android:layout_width="fill_parent" android:layout_marginTop="30.0dip" android:text="@string/satisfaction_leave_rating" android:drawableLeft="@drawable/ic_rating_thumb" android:drawablePadding="-13.0dip" style="@style/Button.Green" />
+                <Button android:id="@id/satisfaction_send_us_feedback" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/satisfaction_send_us_feedback" style="@style/Button.Gray" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/satisfaction_skip" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/satisfaction_skip" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/text_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_chilli@string/msg_adrep_outdated" style="@style/Text" />
+    <Button android:id="@id/app_detail_adrep_rescan_button" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="_chilli@string/l_adrep_outdated_rescan" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/Button.Gray.Contextual" />
+</LinearLayout>

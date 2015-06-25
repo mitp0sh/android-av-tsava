@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <FrameLayout android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:id="@id/filebrowser_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        <TextView android:gravity="center" android:id="@id/filebrowser_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/l_filebrowser_dir_empty" android:paddingStart="@dimen/content_marginHorizontal" android:paddingEnd="@dimen/content_marginHorizontal" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/bg_screen_dark" android:paddingTop="@dimen/content_marginVerticalSmall" android:paddingBottom="@dimen/content_marginVerticalSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_marginHorizontal" android:paddingEnd="@dimen/content_marginHorizontal">
+        <TextView android:ellipsize="start" android:id="@id/filebrowser_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:id="@id/filebrowser_button_pick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_filebrowser_button_pick" android:layout_marginStart="@dimen/content_marginHorizontal" style="@style/Button.Gray" />
+    </LinearLayout>
+</LinearLayout>

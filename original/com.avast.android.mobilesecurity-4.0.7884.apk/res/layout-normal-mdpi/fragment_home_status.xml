@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/status_linear_layout" android:background="@drawable/xml_bg_status_section_secured" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/home_status_title_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="_chilli@string/l_home_status_all_shields_on" android:includeFontPadding="false" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="0.0" android:fontFamily="sans-serif-condensed" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/home_status_subtitle_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="0.0" android:fontFamily="sans-serif-condensed" />
+        <ImageView android:id="@id/home_status_show_details_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

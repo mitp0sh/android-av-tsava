@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/xml_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="@string/l_avast_at_client_welcome" android:layout_weight="1.0" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_never_show_again" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/l_avast_at_client_welcome_never_show_again" avast:rowTitleStyle="@style/RowButtonTitle" avast:rowDAO="none" />
+    </LinearLayout>
+</LinearLayout>

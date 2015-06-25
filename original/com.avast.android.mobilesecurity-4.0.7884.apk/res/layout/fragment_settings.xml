@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_edge_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_updates" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/menu_updates" avast:rowSubTitle="_chilli@string/pref_updates_subtitle" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_password_protection" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/pref_password_protection" avast:rowDAO="none" />
+        <include layout="@layout/row_line_separator_short" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_change_password" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/pref_password_change" />
+        <include android:id="@id/r_password_recovery_separator" layout="@layout/row_line_separator_short" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_password_recovery" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/pref_password_recovery_number" />
+        <include layout="@layout/row_line_separator_short" />
+        <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_password_timeout" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gPinTimeout" avast:rowTitle="_chilli@string/pref_pin_timeout" avast:rowSubTitle="_chilli@string/pref_pin_timeout_hint" avast:rowEntriesNames="@array/pref_pin_timeout_names" avast:rowEntriesValues="@array/pin_timeout_values" />
+        <include android:id="@id/r_uninstall_protection_separator" layout="@layout/row_line_separator_short" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_uninstall_protection" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsUninstallProtectionEnabled" avast:rowTitle="_chilli@string/pref_uninstall_protection" avast:rowSubTitle="_chilli@string/pref_uninstall_protection_desc" avast:rowDAO="preference" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_detectPUP" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsPupEnabled" avast:rowTitle="_chilli@string/pref_detectPUP" avast:rowSubTitle="_chilli@string/pref_detectPUP_hint" avast:rowDefaultValue="true" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_globalActivityLogExternal" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsGlobalActivityLogExternal" avast:rowTitle="_chilli@string/pref_globalActivityLogExternal" avast:rowSubTitle="_chilli@string/pref_globalActivityLogExternal_hint" avast:rowDefaultValue="false" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_scan_wakelock" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsScanWakelock" avast:rowTitle="_chilli@string/pref_scan_wakelock" avast:rowSubTitle="_chilli@string/pref_scan_wakelock_hint" avast:rowDefaultValue="true" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_communityIQ" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="_chilli@string/l_community_iq" avast:rowSubTitle="_chilli@string/l_community_iq_desc" avast:rowDAO="none" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_notification_center" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/pref_notification_center_title" avast:rowSubTitle="_chilli@string/pref_notification_center_subtitle" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.LanguageSelectorRow android:id="@id/r_language" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/pref_language" avast:rowSubTitle="@string/pref_language_current" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_about" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/menu_about" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_automatic_scanner_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/part_scanner_toggles" />
+        <TextView android:textColor="@color/text_automatic_scanner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_automatic_scan_repeat" android:layout_marginStart="@dimen/content_marginHorizontal" />
+        <com.avast.android.generic.ui.widget.WeekDaysRow android:id="@id/automatic_scan_days_row" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowDAO="none" />
+        <View android:background="@color/bg_scanner_toggles_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/content_marginHorizontal" />
+        <TextView android:textColor="@color/text_automatic_scanner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:text="_chilli@string/l_automatic_scan_time" android:layout_marginStart="@dimen/content_marginHorizontal" />
+        <com.avast.android.mobilesecurity.ui.widget.StyledTimePicker android:id="@id/automatic_scan_timepicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_divider_height">1.0px</dimen>
+    <dimen name="rowButtonMarginBottom">5.0dip</dimen>
+    <dimen name="rowButtonMarginTop">-2.0dip</dimen>
+    <dimen name="com_facebook_picker_divider_width">1.0px</dimen>
+</resources>

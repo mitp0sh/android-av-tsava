@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/home_button_shield" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/home_separator_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginTop="@dimen/content_marginVertical" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_marginBottom="@dimen/content_marginVertical" android:layout_alignTop="@id/main_actions" android:layout_alignBottom="@id/main_actions" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_actions" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/btn_virus_scanner" android:text="_chilli@string/l_home_actions_virus_scanner" android:drawableLeft="@drawable/xml_btn_virus_scanner" android:drawableStart="@drawable/xml_btn_virus_scanner" style="@style/button_home_actions" />
+            <Button android:id="@id/btn_network_security" android:layout_marginLeft="1.0dip" android:text="_chilli@string/l_home_actions_network_security" android:drawableLeft="@drawable/xml_btn_network_security" android:drawableStart="@drawable/xml_btn_network_security" android:layout_marginStart="1.0dip" style="@style/button_home_actions" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/btn_backup_battery_saver" style="@style/button_home_actions" />
+            <Button android:id="@id/btn_applocking" android:layout_marginLeft="1.0dip" android:text="_chilli@string/l_home_actions_app_locking" android:drawableLeft="@drawable/xml_btn_app_locking" android:drawableStart="@drawable/xml_btn_app_locking" android:layout_marginStart="1.0dip" style="@style/button_home_actions" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_more_tools" android:background="@drawable/xml_bg_home_btn_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/main_actions">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/xml_btn_more_tools" android:layout_marginEnd="5.0dip" />
+        <TextView android:gravity="center" android:id="@id/txt_more_tools" android:paddingLeft="5.0dip" android:paddingTop="@dimen/home_actions_button_padding" android:paddingBottom="@dimen/home_actions_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_home_actions_more_tools" android:fontFamily="sans-serif-condensed" />
+    </LinearLayout>
+</RelativeLayout>

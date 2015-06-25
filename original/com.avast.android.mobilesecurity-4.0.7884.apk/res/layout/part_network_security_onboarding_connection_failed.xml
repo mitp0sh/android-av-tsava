@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ns_onboarding_connection_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/network_security_onboarding_paragraph_margin" android:layout_below="@id/ns_onboarding_subtitle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/network_security_automatic_connection_failed_textSize" android:textColor="@color/network_security_automatic_connection_failed_text" android:id="@id/ns_onboarding_connection_failed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_network_security_could_not_connect_to_wifi" style="@style/TextView.HomeNetworkSecurity" />
+</LinearLayout>

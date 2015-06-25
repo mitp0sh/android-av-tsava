@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/bg_new_list_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:textColor="@color/text_new_list_header" android:gravity="center" android:id="@id/referral_contacts_selected" android:paddingTop="@dimen/content_marginVerticalBig" android:paddingBottom="@dimen/content_marginVerticalBig" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/referral_contacts_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/xml_progress_horizontal_orange" android:minHeight="2.0dip" style="?android:progressBarStyleHorizontal" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/referral_contacts_buttonbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:showDividers="middle" style="@style/ButtonBar.Orange">
+            <Button android:id="@id/referral_contacts_clear" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="_chilli@string/l_referral_contacts_clear" android:layout_weight="1.0" style="@style/Button.Borderless.Orange" />
+            <View android:background="@color/bg_button_bar_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <Button android:textStyle="bold" android:id="@id/referral_contacts_send" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="_chilli@string/l_referral_contacts_add_message" android:layout_weight="1.0" style="@style/Button.Borderless.Orange" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" />
+        <TextView android:textAppearance="@style/TextAppearance.Medium" android:gravity="center" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="_chilli@string/l_referral_no_contacts_found" />
+    </FrameLayout>
+</LinearLayout>

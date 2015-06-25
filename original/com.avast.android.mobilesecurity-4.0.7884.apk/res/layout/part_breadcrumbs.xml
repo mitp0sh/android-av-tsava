@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/titlebar" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.app.FragmentBreadCrumbs android:id="@id/breadcrumbs" android:tag="breadcrumbs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+</LinearLayout>

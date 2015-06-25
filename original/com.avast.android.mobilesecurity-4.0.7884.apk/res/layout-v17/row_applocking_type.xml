@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="?rowStyle">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="@dimen/content_marginHorizontalSmall" android:src="@drawable/ic_app" android:scaleType="fitXY" android:layout_marginEnd="@dimen/content_marginHorizontalSmall" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/l_app" android:maxLines="2" style="?rowTitleStyle" />
+            <TextView android:visibility="gone" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" style="?rowSubTitleStyle" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center" android:id="@id/b_lock" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontalSmall" android:textOn="" android:textOff="" android:paddingStart="0.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="@dimen/content_marginHorizontalSmall" />
+    </LinearLayout>
+</merge>

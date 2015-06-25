@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="pin_backspace_height">19.000006%p</fraction>
+    <fraction name="pin_backspace_width">17.499996%p</fraction>
+    <fraction name="pin_horizontal_gap">1.4999986%p</fraction>
+    <fraction name="pin_key_height">9.000004%p</fraction>
+    <fraction name="pin_key_width">25.0%p</fraction>
+    <fraction name="pin_vertical_gap">0.99999905%p</fraction>
+    <fraction name="pin_zero_height">9.000004%p</fraction>
+    <fraction name="pin_zero_width">78.0%p</fraction>
+</resources>

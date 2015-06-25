@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">%d 天后</item>
+        <item quantity="one">明天</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%d 小时后</item>
+        <item quantity="one">1 小时后</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">%d 分钟后</item>
+        <item quantity="one">1 分钟后</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%d 秒后</item>
+        <item quantity="one">1 秒后</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d 天前</item>
+        <item quantity="one">昨天</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d 小时前</item>
+        <item quantity="one">1 小时前</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d 分钟前</item>
+        <item quantity="one">1 分钟前</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d 秒前</item>
+        <item quantity="one">1 秒前</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%d 天后</item>
+        <item quantity="one">明天</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%d 小时后</item>
+        <item quantity="one">1 小时后</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%d 分钟后</item>
+        <item quantity="one">1 分钟后</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%d 秒后</item>
+        <item quantity="one">1 秒后</item>
+    </plurals>
+    <plurals name="l_filebrowser_selected">
+        <item quantity="other">已选择 %s</item>
+        <item quantity="one">已选择 %s</item>
+        <item quantity="two">已选择 %s</item>
+        <item quantity="few">已选择 %s</item>
+        <item quantity="many">已选择 %s</item>
+    </plurals>
+    <plurals name="l_subscription_remaining_time">
+        <item quantity="other">还剩 %s 天</item>
+        <item quantity="zero">还剩 %s 天</item>
+        <item quantity="one">还剩 %s 天</item>
+        <item quantity="two">还剩 %s 天</item>
+        <item quantity="few">还剩 %s 天</item>
+        <item quantity="many">还剩 %s 天</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">过去 %d 天</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">%d 天前</item>
+        <item quantity="one">昨天</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d 小时前</item>
+        <item quantity="one">1 小时前</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d 分钟前</item>
+        <item quantity="one">1 分钟前</item>
+    </plurals>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d 秒前</item>
+        <item quantity="one">1 秒前</item>
+    </plurals>
+</resources>

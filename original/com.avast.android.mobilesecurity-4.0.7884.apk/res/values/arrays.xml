@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="avast_account_reporting_frequencies_names">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <integer-array name="avast_account_reporting_frequencies_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </integer-array>
+    <array name="contact_phoneTypes" />
+    <string-array name="feedback_types">
+        <item>Custom</item>
+        <item>Bug report</item>
+        <item>Crash report</item>
+        <item>Feature request</item>
+    </string-array>
+    <string-array name="languages_code">
+        <item></item>
+        <item>ar</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>hu</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>tr</item>
+        <item>vi</item>
+        <item>ko</item>
+        <item>zh-rCN</item>
+        <item>zh-rTW</item>
+        <item>ja</item>
+    </string-array>
+    <string-array name="languages_names">
+        <item>@string/pref_language_default</item>
+        <item>العربية</item>
+        <item>Беларуская</item>
+        <item>Български</item>
+        <item>Català</item>
+        <item>Čeština</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Italiano</item>
+        <item>Magyar</item>
+        <item>Nederlands</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Pусский</item>
+        <item>Türkçe</item>
+        <item>Tiếng Việt</item>
+        <item>한국어</item>
+        <item>中文 (简体)</item>
+        <item>中文 (正體)</item>
+        <item>日本語</item>
+    </string-array>
+    <string-array name="paths_to_partner_id">
+        <item>/system/etc/asus.id</item>
+        <item>/system/etc/hp.id</item>
+        <item>/system/etc/huawei.id</item>
+        <item>/system/etc/tcl.id</item>
+        <item>/system/etc/partner.id</item>
+    </string-array>
+    <integer-array name="pin_timeout_values">
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+    </integer-array>
+    <array name="pref_pin_timeout_names" />
+</resources>

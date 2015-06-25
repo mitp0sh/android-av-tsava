@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/button_subscription_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/content_marginHorizontalSmall" android:paddingStart="@dimen/content_marginHorizontal" android:paddingEnd="@dimen/content_marginHorizontal" style="?billingButtonStyleGreen" />
+    <FrameLayout android:textStyle="normal" android:layout_gravity="center" android:id="@id/button_subscription_progress" android:background="@drawable/xml_btn_gray" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_marginHorizontalBig" android:paddingEnd="@dimen/content_marginHorizontalBig">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@android:style/Widget.ProgressBar.Small" />
+    </FrameLayout>
+</merge>

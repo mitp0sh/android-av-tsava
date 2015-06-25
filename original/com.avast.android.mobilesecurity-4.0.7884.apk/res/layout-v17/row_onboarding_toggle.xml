@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/onboarding_toggle_button" android:background="@drawable/xml_bg_toggle_transition" android:paddingTop="@dimen/onboarding_toggle_paddingVertical" android:paddingBottom="@dimen/onboarding_toggle_paddingVertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/onboarding_toggle_paddingHorizontal" android:paddingEnd="@dimen/onboarding_toggle_paddingHorizontal">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/onboarding_toggle_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/toggle_textviews_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/onboarding_toggle_marginHorizontal" android:layout_marginStart="@dimen/onboarding_toggle_marginHorizontal">
+            <TextView android:id="@id/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/OnboardingToggleTitle" />
+            <TextView android:ellipsize="marquee" android:id="@id/row_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" style="@style/OnboardingToggleTitle.Sub" />
+            <TextView android:ellipsize="marquee" android:id="@id/row_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" style="@style/OnboardingToggleTitle.Warning" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" style="@style/ScrollView.Transparent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginHorizontalBig" android:layout_marginBottom="@dimen/content_marginHorizontalBig" android:src="@drawable/ic_wizard_account" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/wizard_account_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_marginBottom="@dimen/content_marginHorizontalBig" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+        </LinearLayout>
+        <LinearLayout style="@style/ButtonLayout">
+            <Button android:id="@id/b_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:text="@string/l_cancel" android:layout_weight="1.0" android:layout_marginEnd="4.0dip" style="@style/Button.Gray" />
+            <Button android:id="@id/b_ok" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="@string/setup_avast_account" android:layout_weight="1.0" android:layout_marginStart="4.0dip" style="@style/Button.Green" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

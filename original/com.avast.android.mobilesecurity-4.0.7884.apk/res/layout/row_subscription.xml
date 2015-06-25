@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:duplicateParentState="true" style="@style/Row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/row_icon" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontalSmall" android:layout_marginTop="@dimen/content_marginVertical" android:layout_marginRight="@dimen/content_marginHorizontal_inverse" android:layout_marginStart="@dimen/content_marginHorizontalSmall" android:layout_marginEnd="@dimen/content_marginHorizontal_inverse" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/row_title_sub_progress_group" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/row_icon" android:layout_toEndOf="@id/row_icon">
+        <TextView android:text="@string/l_app" android:layout_weight="1.0" style="@style/RowTitle" />
+        <TextView android:textColor="@color/subscription_grey" android:layout_gravity="center_vertical" android:id="@id/row_subscription_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="@string/l_subscription_unknown" android:layout_weight="0.0" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/row_subscription_progress" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_marginBottom="0.0dip" android:layout_weight="0.0" android:layout_marginStart="0.0dip" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@android:style/Widget.ProgressBar.Small" />
+    </LinearLayout>
+    <TextView android:paddingBottom="@dimen/content_marginVerticalBig" android:layout_below="@id/row_title_sub_progress_group" android:layout_alignLeft="@id/row_title_sub_progress_group" android:layout_alignStart="@id/row_title_sub_progress_group" style="@style/RowTitle.Sub" />
+</RelativeLayout>

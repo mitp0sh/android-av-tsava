@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bg_scanner_row_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:background="@color/bg_scanner_row_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/xml_bg_scanner_row" android:divider="@drawable/xml_list_divider_scanner_log" android:dividerHeight="1.0dip" android:footerDividersEnabled="false" />
+    <TextView android:gravity="center" android:id="@android:id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_scanner_ignorelist_empty" />
+</LinearLayout>

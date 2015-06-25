@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/xml_bg_crosspromo_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/crosspromo_virusscan_title_textSize" android:textColor="@color/crosspromo_title" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="@dimen/crosspromo_virusscan_title_height" />
+    <View android:background="@color/crosspromo_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalMedium" android:layout_marginBottom="@dimen/content_marginVerticalMedium">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginStart="@dimen/content_marginHorizontal" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/crosspromo_virusscan_appName_textSize" android:textStyle="bold" android:textColor="@color/crosspromo_app" android:id="@id/app" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/crosspromo_virusscan_text_textSize" android:textColor="@color/crosspromo_text" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_marginHorizontal" android:src="@drawable/ic_crosspromo_virusscan_download" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+    </LinearLayout>
+</LinearLayout>

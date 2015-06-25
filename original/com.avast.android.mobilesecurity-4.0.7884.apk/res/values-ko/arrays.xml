@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="avast_account_reporting_frequencies_names">
+        <item>1분</item>
+        <item>5분</item>
+        <item>10분</item>
+        <item>15분</item>
+        <item>30분</item>
+        <item>1시간</item>
+    </string-array>
+    <string-array name="feedback_types">
+        <item>사용자 지정</item>
+        <item>버그 보고서</item>
+        <item>충돌 보고서</item>
+        <item>기능 요청</item>
+    </string-array>
+</resources>

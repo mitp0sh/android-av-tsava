@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="@style/Row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ignore_list_item_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_app" android:scaleType="fitXY" android:layout_marginEnd="16.0dip" />
+    <TextView android:ellipsize="end" android:id="@id/ignore_list_item_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/l_app" android:maxLines="2" android:scrollHorizontally="true" android:layout_weight="1.0" style="@style/RowTitle" />
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/xml_list_arrow" android:layout_weight="0.0" android:layout_marginStart="16.0dip" />
+</LinearLayout>

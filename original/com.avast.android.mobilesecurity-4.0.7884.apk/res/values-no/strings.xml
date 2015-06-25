@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="l_world_cup_2014_promo_crouton_subtitle">Trykk for spesialtilbud til fotball-VM.</string>
+    <string name="l_world_cup_2014_promo_crouton_title">Uslåelig AVAST-forsvar.</string>
+    <string name="l_world_cup_2014_promo_save_30">(DU SPARER 33 %)</string>
+    <string name="l_world_cup_2014_promo_subscription_cancel_button">Nei takk</string>
+    <string name="l_world_cup_2014_promo_subscription_premiumfeatures_button">Hvorfor Premium?</string>
+    <string name="l_world_cup_2014_promo_subscription_purchase_button_subtitle">Ettårslisenser for</string>
+    <string name="l_world_cup_2014_promo_subscription_purchase_button_title">Sikre meg nå</string>
+    <string name="l_world_cup_2014_promo_subscription_subtitle">Spar 33 % på premium-lisenser under fotball-VM.</string>
+    <string name="l_world_cup_2014_promo_subscription_title">Ikke la trusler på nettet slå ut forsvaret ditt!</string>
+</resources>

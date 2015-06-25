@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_set_commands" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/set_commands" avast:rowSubTitle="@string/set_commands_menu_subtitle" />
+    <include layout="@layout/row_line_separator" />
+    <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_about" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/menu_about" />
+</LinearLayout>

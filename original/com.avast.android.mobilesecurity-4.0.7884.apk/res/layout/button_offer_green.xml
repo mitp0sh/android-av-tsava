@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="@dimen/font_medium" android:id="@id/subscription_button_monthly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_marginVerticalBig" android:minHeight="20.0dip" style="?billingButtonStyleGreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

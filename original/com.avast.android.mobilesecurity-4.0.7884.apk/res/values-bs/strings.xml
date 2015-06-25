@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Midnight">Ponoć</string>
+    <string name="Noon">Podne</string>
+    <string name="last_month">Posljednji mjesec</string>
+    <string name="midnight">ponoć</string>
+    <string name="noon">podne</string>
+    <string name="older">Starije</string>
+</resources>

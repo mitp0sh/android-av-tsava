@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_flow_body" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/purchase_flow_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.viewpagerindicator.avast.DrawablePageIndicator android:id="@id/purchase_flow_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/flow_indicator_height" avast:gapWidth="10.0dip" avast:unselectedDrawable="@drawable/viewpager_indicator_avast_normal" avast:selectedDrawable="@drawable/viewpager_indicator_avast_selected" avast:drawableWidth="40.0dip" avast:drawableHeight="8.0dip" />
+    <LinearLayout android:padding="@dimen/content_marginHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/purchase_flow_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/l_flow_wtb_skip" android:layout_weight="1.0" android:paddingStart="@dimen/content_marginHorizontalSmallest" android:paddingEnd="@dimen/content_marginHorizontalSmallest" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/Button.Gray" />
+        <Button android:id="@id/purchase_flow_buy" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/l_flow_wtb_b_gopremium" android:layout_weight="2.0" android:paddingStart="@dimen/content_marginHorizontalSmallest" android:paddingEnd="@dimen/content_marginHorizontalSmallest" style="@style/Button.Green" />
+    </LinearLayout>
+</LinearLayout>

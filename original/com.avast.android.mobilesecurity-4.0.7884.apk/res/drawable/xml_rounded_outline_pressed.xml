@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/item_stroke_width_smallest" android:color="@color/bg_billing_edge_color" />
+    <solid android:color="@color/bg_btn_borderless" />
+    <corners android:radius="@dimen/item_rounded_corners_radius" />
+</shape>

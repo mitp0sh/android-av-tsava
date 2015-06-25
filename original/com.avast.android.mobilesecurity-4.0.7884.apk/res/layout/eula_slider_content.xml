@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/row_full_separator" />
+    <TextView android:id="@id/about_eula_text" android:paddingTop="@dimen/content_marginVertical" android:fadingEdge="horizontal" android:fadingEdgeLength="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RowTitle.Sub" />
+</LinearLayout>

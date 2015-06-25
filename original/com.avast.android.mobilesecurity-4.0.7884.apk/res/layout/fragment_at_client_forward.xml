@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_at_client_forward_start_stop" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="forward_start_stop" avast:rowTitle="@string/l_at_client_forward_start_stop" avast:rowDAO="none" />
+    <include layout="@layout/row_line_separator" />
+    <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_at_client_forward_type" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="forward_type" avast:rowTitle="@string/l_at_client_forward_type" avast:rowDAO="none" />
+    <include android:id="@id/line_separator_silent_forwarding" layout="@layout/row_line_separator" />
+    <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_at_client_silent_forwarding" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="send_sms_to_friend" avast:rowTitle="@string/l_silent_forwarding" avast:rowDAO="none" />
+    <include android:id="@id/line_separator_forward_phone_number" layout="@layout/row_line_separator" />
+    <com.avast.android.generic.ui.widget.EditTextRow android:id="@id/r_at_client_forward_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="phone_number" avast:rowTitle="@string/l_phone_number_optional" avast:rowDAO="none" />
+    <include layout="@layout/row_line_separator" />
+</LinearLayout>

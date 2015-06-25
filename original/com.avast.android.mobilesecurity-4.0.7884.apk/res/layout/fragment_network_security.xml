@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ns_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avast.android.mobilesecurity.ui.widget.NetworkScannerView android:id="@id/ns_scanner_progress_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ns_stats_bar" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_scanner_net" android:scaleType="centerCrop" />
+    <include layout="@layout/part_network_security_results" />
+    <include layout="@layout/part_network_security_onboarding" />
+    <include layout="@layout/part_network_security_stats" />
+</RelativeLayout>

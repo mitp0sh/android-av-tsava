@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">%d ရက္တြင္</item>
+        <item quantity="one">မနက္ျဖန္</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">%d နာရီတြင္</item>
+        <item quantity="one">၁ နာရီတြင္</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">%d မိနစ္တြင္</item>
+        <item quantity="one">၁ မိနစ္တြင္</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">%d စကၠန္႔တြင္</item>
+        <item quantity="one">၁ စကၠန္႔တြင္</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">ၿပီးခဲ့သည့္ %d ေန႔က</item>
+        <item quantity="one">မေန႔က</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">လြန္ခဲ့သည့္ %d နာရီက</item>
+        <item quantity="one">လြန္ခဲ့သည့္ ၁နာရီက</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">လြန္ခဲ့သည့္ %d မိနစ္က</item>
+        <item quantity="one">လြန္ခဲ့သည့္ ၁ မိနစ္က</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">ၿပီးခဲ့သည့္ %d စကၠန္႔က</item>
+        <item quantity="one">ၿပီးခဲ့သည့္ ၁ စကၠန္႔က</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">%d ရက္</item>
+        <item quantity="one">မနက္ျဖန္</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">%d နာရီတြင္</item>
+        <item quantity="one">၁ နာရီတြင္</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">%d မိနစ္တြင္</item>
+        <item quantity="one">၁ မိနစ္တြင္</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">%d စကၠန္႔တြင္</item>
+        <item quantity="one">၁ စကၠန္႔တြင္</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">ၿပီးခဲ့သည့္ %d ရက္</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">ၿပီးခဲ့သည့္ %d ေန႔က</item>
+        <item quantity="one">မေန႔က</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">လြန္ခဲ့သည့္ %d နာရီက</item>
+        <item quantity="one">လြန္ခဲ့သည့္ ၁နာရီက</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">လြန္ခဲ့သည့္ %d မိနစ္က</item>
+        <item quantity="one">လြန္ခဲ့သည့္ ၁ မိနစ္က</item>
+    </plurals>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">လြန္ခဲ့သည့္ %d စကၠန္႔က</item>
+        <item quantity="one">လြန္ခဲ့သည့္ ၁ စကၠန္႔က</item>
+    </plurals>
+</resources>

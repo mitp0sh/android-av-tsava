@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/bg_webview_purchase" />
+    <corners android:radius="@dimen/item_rounded_corners_radius" />
+    <stroke android:width="@dimen/item_stroke_width_smallest" android:color="@color/bg_stroke_webview_purchase" />
+</shape>

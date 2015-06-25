@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/part_breadcrumbs" />
+    <LinearLayout android:id="@id/scanner_log_list_container" android:background="@color/bg_menu_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:footerDividersEnabled="false" style="@style/ListView.Transparent" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/scanner_log_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+    </FrameLayout>
+</LinearLayout>

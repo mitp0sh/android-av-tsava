@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">în %d zile</item>
+        <item quantity="one">mâine</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">în %d ore</item>
+        <item quantity="one">într-o oră</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">în %d minute</item>
+        <item quantity="one">într-un minut</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">în %d secunde</item>
+        <item quantity="one">într-o secundă</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">acum %d zile</item>
+        <item quantity="one">ieri</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">acum %d ore</item>
+        <item quantity="one">acum o oră</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">acum %d minute</item>
+        <item quantity="one">acum un minut</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">acum %d secunde</item>
+        <item quantity="one">acum o secundă</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">în %d zile</item>
+        <item quantity="one">mâine</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">în %d ore</item>
+        <item quantity="one">într-o oră</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">în %d minute</item>
+        <item quantity="one">într-un minut</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">în %d secunde</item>
+        <item quantity="one">într-o secundă</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">În ultimele %d zile</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">acum %d zile</item>
+        <item quantity="one">ieri</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">acum %d ore</item>
+        <item quantity="one">acum o oră</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">acum %d minute</item>
+        <item quantity="one">acum un minut</item>
+    </plurals>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">acum %d secunde</item>
+        <item quantity="one">acum o secundă</item>
+    </plurals>
+</resources>

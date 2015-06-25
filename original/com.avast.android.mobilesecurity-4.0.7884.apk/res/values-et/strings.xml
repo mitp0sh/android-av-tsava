@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Midnight">Kesköö</string>
+    <string name="Noon">Keskpäev</string>
+    <string name="last_month">Eelmine kuu</string>
+    <string name="midnight">kesköö</string>
+    <string name="noon">keskpäev</string>
+    <string name="older">Vanem</string>
+</resources>

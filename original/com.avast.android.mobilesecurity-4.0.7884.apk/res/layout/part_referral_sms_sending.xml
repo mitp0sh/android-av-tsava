@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_circle_sending_sms" style="?android:attr/progressBarStyle" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="#ff000000" android:id="@id/l_referral_sms_sending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_referral_sending_sms" style="@style/TextNoShadow" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_referral_sending_sms_subtitle" style="@style/TextNoShadow" />
+    </LinearLayout>
+</RelativeLayout>

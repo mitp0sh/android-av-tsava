@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <nine-patch android:src="@drawable/bg_toggle_checklist_unchecked" />
+    </item>
+    <item>
+        <nine-patch android:src="@drawable/bg_toggle_checklist_checked" />
+    </item>
+</transition>

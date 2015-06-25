@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_button" android:orderInCategory="0" android:showAsAction="always" />
+    <item android:id="@id/menu_home_referral" android:orderInCategory="10" android:title="@string/l_menu_referral" android:showAsAction="never" />
+    <item android:id="@id/menu_home_updates" android:orderInCategory="11" android:title="@string/menu_updates" android:showAsAction="never" />
+    <item android:id="@id/menu_home_settings" android:orderInCategory="12" android:title="@string/settings" android:showAsAction="never" />
+    <item android:id="@id/menu_home_account" android:orderInCategory="13" android:title="@string/menu_account_signup" android:showAsAction="never" />
+    <item android:id="@id/menu_home_rate_us" android:orderInCategory="14" android:title="@string/menu_rate_us" android:showAsAction="never" />
+    <item android:id="@id/menu_home_offerwall" android:orderInCategory="15" android:title="@string/menu_offerwall" android:showAsAction="never" />
+</menu>

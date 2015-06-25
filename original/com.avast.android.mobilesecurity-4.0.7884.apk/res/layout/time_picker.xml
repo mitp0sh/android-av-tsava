@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avast.android.mobilesecurity.ui.widget.NumberPicker android:id="@id/hours_number_picker" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textSize="38.0sp" android:textColor="#ffa5abc0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" android:includeFontPadding="false" android:fontFamily="sans-serif-thin" />
+    <com.avast.android.mobilesecurity.ui.widget.NumberPicker android:id="@id/minutes_number_picker" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

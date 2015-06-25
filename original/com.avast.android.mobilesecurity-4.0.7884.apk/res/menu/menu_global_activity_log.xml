@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_delete" android:id="@id/menu_global_activity_log_delete_all" android:orderInCategory="10" android:title="@string/l_global_activity_log_delete_all" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_filter_action" android:id="@id/menu_global_activity_log_filter" android:orderInCategory="11" android:title="@string/l_global_activity_log_filter" android:showAsAction="always|withText" />
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/dashboard_fragment_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:name="com.avast.android.mobilesecurity.app.home.DashboardFragment" android:id="@id/fragment_dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/home_fragments_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:name="com.avast.android.mobilesecurity.app.home.HomeStatusFragment" android:id="@id/fragment_home_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.avast.android.mobilesecurity.app.home.VerticalSlideLayout android:gravity="top" android:id="@id/home_sliding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:panelHeight="0.0dip" app:shadowHeight="0.0dip" app:paralaxOffset="0.0dip" app:dragView="@id/catcher" app:overlay="false" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <fragment android:name="com.avast.android.mobilesecurity.app.home.HomeActionsFragment" android:id="@id/fragment_home_actions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <fragment android:name="com.avast.android.mobilesecurity.app.home.HomeTimelineFragment" android:id="@id/fragment_home_timeline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/vertical_expandable_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <fragment android:name="com.avast.android.mobilesecurity.app.home.HomeShieldsFragment" android:id="@id/fragment_home_shields" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/catcher" android:background="@color/home_button_shield_pressed" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/ic_catcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.avast.android.mobilesecurity.app.home.VerticalSlideLayout>
+    </LinearLayout>
+</merge>

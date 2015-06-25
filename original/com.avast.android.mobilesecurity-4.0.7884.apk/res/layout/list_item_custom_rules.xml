@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="@style/Row.WithArrow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="Family" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/ListTitle" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xml_list_arrow" android:layout_weight="0.0" />
+</LinearLayout>

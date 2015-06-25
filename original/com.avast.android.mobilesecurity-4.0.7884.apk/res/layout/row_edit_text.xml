@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/Row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="wrap_content" android:text="@string/l_app" style="@style/RowTitle" />
+    <TextView android:layout_marginTop="@dimen/content_marginVerticalSmall" android:text="_chilli@string/l_na" style="@style/RowTitle.Sub" />
+    <EditText android:id="@id/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalSmall" style="@style/EditText" />
+</LinearLayout>

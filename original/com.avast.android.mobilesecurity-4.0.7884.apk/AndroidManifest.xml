@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.avast.android.mobilesecurity" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <permission android:name="com.dolphin.browser.permission.ACCESS_PROVIDER" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.dolphin.browser.permission.ACCESS_PROVIDER"/>
+    <permission android:name="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION"/>
+    <permission android:name="com.avast.android.generic.COMM_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avast.android.generic.COMM_PERMISSION"/>
+    <permission android:name="com.avast.android.mobilesecurity.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avast.android.mobilesecurity.permission.C2D_MESSAGE"/>
+    <permission android:name="com.avast.installer.MAKE_PREMIUM" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avast.installer.MAKE_PREMIUM"/>
+    <permission android:name="com.avast.installer.ACCEPT_EULA" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avast.installer.ACCEPT_EULA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <android:uses-permission android:maxSdkVersion="18" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:label="@string/l_payment_broadcast_permission" android:name="com.avast.android.billing.fortumo.PAYMENT_BROADCAST_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avast.android.billing.fortumo.PAYMENT_BROADCAST_PERMISSION"/>
+    <library android:name="@string/l_offerwall"/>
+    <application android:allowBackup="true" android:icon="@drawable/app_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/logo_arrow" android:name="com.avast.android.mobilesecurity.Application" android:supportsRtl="true" android:theme="@style/Theme.Avast.MobileSecurity">
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.avast.android.mobilesecurity.app.home.StartActivity" android:theme="@style/Theme.Avast.MobileSecurity.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="application/vnd.android.package-archive"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.onboarding.OnboardingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.onboarding.OnboardingScanDoneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.avast.android.mobilesecurity.app.home.HomeActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="com.avast.android.generic.notification.AvastNotificationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.notification"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.at_client.notification"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.avast.android.mobilesecurity" android:path="/temporaryNotifications" android:scheme="content"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:label="@string/settings" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.settings.SettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:label="@string/settings" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.settings.SettingsUpdatesActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.settings.SettingsActivity"/>
+        </activity>
+        <activity android:label="@string/pref_notification_center_title" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.settings.SettingsNotificationCenterActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.settings.SettingsActivity"/>
+        </activity>
+        <activity android:label="@string/settings" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.settings.SettingsAccountActivity"/>
+        <activity android:label="@string/menu_about" android:launchMode="singleTop" android:name="com.avast.android.generic.app.about.AboutActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.settings.SettingsActivity"/>
+        </activity>
+        <activity android:label="@string/l_feedback_title" android:launchMode="singleTop" android:name="com.avast.android.generic.app.about.FeedbackActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.avast.android.generic.app.about.AboutActivity"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/pref_password_enter" android:name="com.avast.android.generic.app.pin.EnterPinActivity" android:noHistory="true" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.NoTitleNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/webshield" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.webshield.WebshieldSettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:label="@string/l_shieldcontrol_messageshield" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.shieldcontrol.MessageShieldActivity"/>
+        <activity android:label="@string/l_shieldcontrol_appshield" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.shieldcontrol.AppShieldActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:label="@string/l_shieldcontrol_fileshield" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.shieldcontrol.FileShieldActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.service.UpdateService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.account.AccountReportService"/>
+        <service android:exported="true" android:name="com.avast.android.mobilesecurity.app.trafficinfo.NetworkStatsService" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION"/>
+        <receiver android:enabled="true" android:name="com.avast.android.mobilesecurity.receiver.ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.mobilesecurity.receiver.NetworkInfoReceiver">
+            <intent-filter>
+                <action android:name="com.avast.android.mobilesecurity.action.NETWORK_STATS_POLL"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SERVICE_STATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.REBOOT"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:label="@string/l_eula" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.wizard.EulaWizardActivity"/>
+        <activity android:label="@string/virus_scanner" android:launchMode="singleTask" android:name="com.avast.android.mobilesecurity.app.scanner.ScannerActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:exported="true" android:label="@string/virus_scanner" android:name="com.avast.android.mobilesecurity.app.scanner.ScannerStarterActivity"/>
+        <activity android:label="@string/virus_scanner" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.scan.ScanActivity"/>
+        <activity android:label="@string/l_log" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.scanner.ScannerLogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.result"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.networksecurity"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/virus_scanner" android:name="com.avast.android.mobilesecurity.app.scanner.AutomaticScanActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.scanner.ScannerActivity"/>
+        </activity>
+        <activity android:label="@string/report_false_positive" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.scanner.ReportDialogActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.scanner.ScannerLogActivity"/>
+        </activity>
+        <activity android:label="@string/virus_scanner" android:name="com.avast.android.mobilesecurity.app.scanner.IgnoreListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.ignorelist"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/network_security" android:launchMode="singleTask" android:name="com.avast.android.mobilesecurity.app.networksecurity.NetworkSecurityActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:name="com.avast.android.mobilesecurity.app.networksecurity.NetworkSecuritySolutionsActivity"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.scanner.VirusShieldActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Translucent"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.messageshield.MessageShieldActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Translucent"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.messageshield.MessageScannerService"/>
+        <service android:name="com.avast.android.mobilesecurity.app.scanner.ReportService"/>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.scanner.DeleteFileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DELETE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/virus_scanner" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.advisor.AdvisorScanActivity"/>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.advisor.AdvisorAppsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.advisorApp"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.advisor.AdvisorPagerActivity"/>
+        </activity>
+        <activity android:name="com.avast.android.mobilesecurity.app.advisor.AdvisorPagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.advisorGroup"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.adrepGroup"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.advisor.AdrepAppsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.adrepApp"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.advisor.AdvisorPagerActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.advisor.AdrepScanExternalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.avast.android.mobilesecurity" android:path="/adrepExternalScan" android:scheme="content"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.advisor.AdvisorPagerActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.advisor.AdrepScanExternalLogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.avast.android.mobilesecurity" android:path="/adrepExternalScanResults" android:scheme="content"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.advisor.AdvisorPagerActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avast.android.mobilesecurity.app.firewall.FirewallActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.Firewall"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.firewall.CustomRulesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.customRule"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.firewall.FirewallActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.firewall.CustomRuleDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.avast.android.mobilesecurity.customRule"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.firewall.CustomRulesActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avast.android.mobilesecurity.app.firewall.FirewallLogsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.firewall.FirewallSettingsActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avast.android.mobilesecurity.app.firewall.FirewallSettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.firewall.FirewallActivity"/>
+        </activity>
+        <activity android:name="com.avast.android.mobilesecurity.app.filter.FilterGroupsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.filterGroup"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.filter.FilterGroupDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.avast.android.mobilesecurity.filterGroup"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.filter.FilterGroupsActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.filter.FilterContactsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.filterContact"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.filter.FilterGroupDetailActivity"/>
+        </activity>
+        <activity android:name="com.avast.android.mobilesecurity.app.filter.FilterSmsPickerActivity"/>
+        <activity android:name="com.avast.android.mobilesecurity.app.filter.FilterCallLogPickerActivity"/>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.filter.FilterLogsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.filterLog"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.filter.FilterGroupDetailActivity"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.filter.SmsBlockOfferActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Translucent"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.filter.TelBlockOfferActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Translucent">
+            <intent-filter android:label="@string/l_tel_block_offer">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tel"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.campaign.CampaignWindowActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Translucent"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.notification.DisableAdvisoryNotificationsActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Translucent"/>
+        <receiver android:name="com.avast.android.mobilesecurity.app.filter.core.MessageReceiver">
+            <intent-filter android:priority="2147483646">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.mobilesecurity.app.filter.core.PhoneStateChangeReceiver">
+            <intent-filter android:priority="2147483645">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.mobilesecurity.app.filter.core.OutgoingCallReceiver">
+            <intent-filter android:priority="-1000">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.avast.android.mobilesecurity.app.manager.ManagerPagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.ManagerApp"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/dashboard_menu_offerwall" android:name="com.avast.android.offerwall.OfferwallWebActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.manager.AppDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.avast.android.mobilesecurity.ManagerApp"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.manager.ManagerPagerActivity"/>
+        </activity>
+        <activity android:name="com.avast.android.mobilesecurity.app.trafficinfo.TrafficInfoPagerActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avast.android.mobilesecurity.app.trafficinfo.TrafficInfoSettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.trafficinfo.TrafficInfoPagerActivity"/>
+        </activity>
+        <activity android:name="com.avast.android.mobilesecurity.app.locking.LockingAppsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.com.avast.android.mobilesecurity.lockedApp"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.avast.android.mobilesecurity.app.locking.LockingSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.avast.android.mobilesecurity.lockedApp"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.locking.LockingAppsActivity"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.locking.BlockTimeActivity" android:noHistory="true" android:theme="@style/Theme.Avast.MobileSecurity.FakeDialog" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.locking.BlockGestureActivity" android:noHistory="true" android:theme="@style/Theme.Avast.MobileSecurity.FakeDialog" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.locking.BlockPasswordActivity" android:noHistory="true" android:theme="@style/Theme.Avast.MobileSecurity.FakeDialog" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.locking.BlockAvastPasswordActivity" android:noHistory="true" android:theme="@style/Theme.Avast.MobileSecurity.FakeDialog" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:excludeFromRecents="true" android:name="com.avast.android.generic.ui.PasswordActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Transparent"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:label="@string/activity_filebrowser_label" android:name="com.avast.android.mobilesecurity.filebrowser.SystemFileBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="file/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.home.DbUpdateErrorActivity"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.locking.core.RealtimeAppScanService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.home.AppSetupIntentService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.advisor.AdvisorScanService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.advisor.AdrepScanExternalService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.scanner.ScannerScanService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.scanner.OnDemandScannerScanService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.networksecurity.NetworkSecurityScanService"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.webshield.WebshieldActivity" android:noHistory="true" android:theme="@style/Theme.Avast.MobileSecurity.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.webshield.SiteCorrectActivity" android:noHistory="true" android:theme="@style/Theme.Avast.MobileSecurity.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/l_global_activity_log_title" android:name="com.avast.android.mobilesecurity.app.globalactivitylog.GlobalActivityLogActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.SetupCheckWizardActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.InstallationModeActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".app.home.HomeActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.RootWizardActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.RootMethodWizardActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.DownloadWizardActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.ChooseNameWizardActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.antitheft_setup_components.app.home.InstallationFinishedWizardActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.mobilesecurity.app.home.antitheft.uninstaller.UninstallCheckActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.mobilesecurity.app.home.antitheft.uninstaller.RootMethodActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.mobilesecurity.app.home.antitheft.uninstaller.RootFinishedActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.avast.android.generic.app.account.ConnectionCheckActivity"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.avast.android.generic.ui.NoInternetConnectionWarningActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.avast.android.mobilesecurity.app.licensing.SubscriptionActivity" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION">
+            <intent-filter>
+                <action android:name="com.avast.android.billing.subscription.SubscriptionActivity.START_SUBSCRIPTION_PURCHASE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.avast.android.billing.ui.VoucherUriActivity" android:theme="@style/Theme.Avast.MobileSecurity.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="voucher" android:pathPrefix="/ams_aat_ab" android:scheme="avast"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.avast.android.billing.ui.WebPurchaseActivity" android:theme="@style/Theme.Avast.MobileSecurity.Translucent"/>
+        <activity android:name="com.avast.android.billing.ui.WelcomePremiumActivity"/>
+        <activity android:name="com.avast.android.generic.flowmaker.purchase.PurchaseFlowBActivity"/>
+        <activity android:name="com.avast.android.generic.flowmaker.purchase.PurchaseFlowWizardBActivity"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.locking.core.AppLockingNotificationActivity" android:theme="@style/Theme.Avast.MobileSecurity.Transparent">
+            <intent-filter>
+                <action android:name="intent.action.LOCK_APP_TAPPED"/>
+                <action android:name="intent.action.LOCK_APP_DISMISSED"/>
+                <action android:name="intent.action.LOCK_APP_NEVER"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.scanner.notifications.VirusScannerReminderNotificationActivity" android:theme="@style/Theme.Avast.MobileSecurity.Transparent">
+            <intent-filter>
+                <action android:name="intent.action.VIRUS_SCANNER_REMINDER_TAPPED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/l_menu_referral" android:name="com.avast.android.mobilesecurity.app.referral.ReferralInfoActivity"/>
+        <activity android:label="@string/l_referral_contacts_title" android:name="com.avast.android.mobilesecurity.app.referral.ReferralContactsActivity" android:theme="@style/Theme.Avast.MobileSecurity.ActionbarSearchView"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.webshield.WebshieldService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.fileshield.FileShieldService"/>
+        <provider android:authorities="com.avast.android.mobilesecurity" android:exported="false" android:label="@string/app_name" android:name="com.avast.android.mobilesecurity.Provider"/>
+        <receiver android:exported="false" android:name="com.avast.android.mobilesecurity.receiver.NotificationDismissedReceiver"/>
+        <receiver android:name="com.avast.android.mobilesecurity.receiver.AppUninstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.receiver.AppUninstallService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.firewall.core.FirewallHandlingService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.receiver.AppInstallService"/>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.service.UntrustedAppInstallService"/>
+        <receiver android:name="com.avast.android.mobilesecurity.receiver.AppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.receiver.BootCompletedService"/>
+        <receiver android:name="com.avast.android.mobilesecurity.receiver.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.mobilesecurity.app.scanner.AlarmReceiver"/>
+        <receiver android:name="com.avast.android.mobilesecurity.receiver.ServiceStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SERVICE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.avast.android.mobilesecurity.receiver.ExternalPowerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/widget_title" android:name="com.avast.android.mobilesecurity.app.widget.WidgetControlProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.avast.android.mobilesecurity.action.TOGGLE_FIREWALL"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_control"/>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.widget.WidgetControlBigActivity" android:taskAffinity="" android:theme="@style/Theme.Avast.MobileSecurity.Dialog.Widget"/>
+        <service android:enabled="true" android:exported="true" android:label="@string/app_name" android:name="com.avast.android.mobilesecurity.service.CentralService" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION"/>
+        <receiver android:name="com.avast.android.generic.service.C2DMListener" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.avast.android.mobilesecurity"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.avast.android.mobilesecurity"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.service.C2DMHandler" android:permission="com.avast.android.generic.COMM_PERMISSION">
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.generic.action.C2DM_ENABLE_SUITE"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.generic.action.C2DM_DISABLE_SUITE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.service.SettingChangeListener" android:permission="com.avast.android.generic.COMM_PERMISSION">
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.generic.action.PROPERTY_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.service.SuiteMessageListener" android:permission="com.avast.android.generic.COMM_PERMISSION">
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.generic.action.MESSAGE_TO_SUITE"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.mobilesecurity.app.account.ACCOUNT_CONNECTED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.mobilesecurity.app.account.ACCOUNT_DISCONNECTED"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.generic.action.UPDATE_CHECK_SUITE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.avast.android.mobilesecurity.app.account.PUSH_ACCOUNT_COMMUNICATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.service.SMSListener">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.service.DataSMSListener">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
+                <data android:scheme="sms"/>
+                <data android:host="localhost"/>
+                <data android:port="15874"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.service.PackageListener">
+            <intent-filter android:priority="2147483646">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483646">
+                <action android:name="com.avast.android.generic.action.SHARE_SETTINGS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.generic.app.passwordrecovery.PasswordRecoveryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.avast.android.generic.RECOVERY_SMS"/>
+                <action android:name="com.avast.android.generic.RECOVERY_TIME_TICK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avast.android.mobilesecurity.receiver.PasswordRecoveryStateLoggerReceiver">
+            <intent-filter>
+                <action android:name="com.avast.android.generic.app.passwordrecovery.ACTION_PASSWORD_RECOVERY_INITIATED"/>
+                <action android:name="com.avast.android.generic.app.passwordrecovery.ACTION_PASSWORD_RECOVERY_EXPIRED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.avast.android.shepherd.ShepherdUriActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="shepherd" android:pathPrefix="/ams" android:scheme="avast"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.avast.android.mobilesecurity.app.scanner.DeviceAdminUninstallationService"/>
+        <activity android:launchMode="singleInstance" android:name="com.avast.android.mobilesecurity.app.scanner.DeviceAdminUninstallationActivity"/>
+        <provider android:authorities="com.avast.android.mobilesecurity.database.billing" android:exported="true" android:name="com.avast.android.billing.internal.database.BillingProvider" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION"/>
+        <service android:exported="true" android:name="com.avast.android.billing.internal.licensing.PurchaseConfirmationService" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION"/>
+        <service android:enabled="true" android:exported="true" android:label="@string/app_name" android:name="com.avast.android.generic.service.DummyService" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ta" android:launchMode="singleTask" android:name="com.avast.android.mobilesecurity.app.home.antitheft.AntiTheftMenuActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/l_at_sms_client_app_name" android:launchMode="singleTask" android:name="com.avast.android.mobilesecurity.app.home.antitheft.smsclient.SmsClientActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:label="@string/set_commands" android:name="com.avast.android.at_client_components.app.home.SetCommandsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/pref_sms_log" android:launchMode="singleTop" android:name="com.avast.android.at_client_components.app.log.SmsLogActivity" android:taskAffinity=""/>
+        <receiver android:name="com.avast.android.at_client_components.service.DataSMSListener">
+            <intent-filter android:priority="2147483645">
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
+                <data android:scheme="sms"/>
+                <data android:host="localhost"/>
+                <data android:port="15875"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/applicationId"/>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="com.avast.android.mobilesecurity.receiver.ReferralReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:launchMode="singleTop" android:name="com.avast.android.generic.app.satisfaction.SatisfactionActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.avast.android.generic.app.satisfaction.SatisfactionFeedbackActivity" android:windowSoftInputMode="stateHidden"/>
+        <service android:exported="true" android:name="com.avast.android.mobilesecurity.licensing.ThirdPartyPremiumService" android:permission="com.avast.installer.MAKE_PREMIUM"/>
+        <service android:exported="true" android:name="com.avast.android.mobilesecurity.service.EulaStatusService" android:permission="com.avast.installer.ACCEPT_EULA"/>
+        <activity android:launchMode="singleTop" android:name="com.avast.android.billing.ui.promo.PromoScreenActivity"/>
+        <activity android:exported="true" android:name="com.avast.android.mobilesecurity.app.licensing.BillingActivityV2" android:permission="com.avast.android.generic.CENTRAL_SERVICE_PERMISSION" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.avast.android.billing.subscription.SubscriptionActivity.START_SUBSCRIPTION_PURCHASE_NEW"/>
+                <action android:name="com.avast.android.billing.subscription.SubscriptionActivity.FINISH_SUBSCRIPTION_PURCHASE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.avast.android.generic.service.SendGamificationService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="mp.MpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="mp.MpService"/>
+        <service android:name="mp.StatusUpdateService"/>
+        <receiver android:name="com.avast.android.billing.v2.provider.fortumo.PaymentStatusReceiver" android:permission="com.avast.test.fortumo.PAYMENT_BROADCAST_PERMISSION">
+            <intent-filter>
+                <action android:name="mp.info.PAYMENT_STATUS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.avast.android.shepherd.ShepherdConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="intent.action.SHEPHERD_CONNECTIVITY_FAILSAFE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.avast.android.shepherd.ShepherdNextUpdateTimeReceiver">
+            <intent-filter>
+                <action android:name="com.avast.android.shepherd.NEXT_UPDATE_TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.avast.android.shepherd.ShepherdDownloadService"/>
+        <activity android:name="com.avast.android.generic.flowmaker.promo.PromoActivity" android:theme="@style/Theme.Avast.Transparent"/>
+    </application>
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:textSize="@dimen/scanner_timepicker_textSize" android:textColor="@color/timepicker_automatic_scanner_text" android:gravity="center" android:id="@id/np__numberpicker_input" android:background="@null" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-thin" class="com.avast.android.mobilesecurity.ui.widget.NumberPicker$CustomEditText" />
+</merge>

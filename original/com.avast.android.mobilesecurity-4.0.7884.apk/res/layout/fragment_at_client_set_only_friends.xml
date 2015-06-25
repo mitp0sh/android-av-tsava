@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_at_client_only_friends" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="only_friends" avast:rowTitle="@string/l_at_client_set_only_friends_title" avast:rowDAO="none" />
+    <include layout="@layout/row_line_separator" />
+</LinearLayout>

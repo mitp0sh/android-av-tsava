@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/button_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="#ff000000" android:id="@id/l_referral_sms_sending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_referral_sms_invite_congratulation" style="@style/TextNoShadow" />
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalSmall" android:text="_chilli@string/l_referral_sms_invite_subtitle" style="@style/TextNoShadow" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:id="@id/ref_invite_license_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalSmall" style="@style/TextNoShadow" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/ref_invite_more_button" android:background="@drawable/xml_btn_referral_sms_success_button" android:layout_width="fill_parent" android:layout_height="@dimen/referral_ok_button_height" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_referral_sms_invite_more_button" />
+</LinearLayout>

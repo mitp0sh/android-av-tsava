@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/xml_text_subtitle" android:paddingTop="@dimen/content_marginVerticalSmall" android:paddingBottom="@dimen/content_marginVerticalSmall" android:clickable="false" android:text="_chilli@string/msg_filter_sms_note" android:paddingStart="@dimen/content_marginHorizontal" android:paddingEnd="@dimen/content_marginHorizontal" style="@style/Text"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

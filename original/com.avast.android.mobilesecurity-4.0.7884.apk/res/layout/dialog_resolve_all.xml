@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:paddingLeft="@dimen/content_marginHorizontal" android:paddingRight="@dimen/content_marginHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_chilli@string/msg_confirm_resolve_all" style="@style/SDL.TextView.Message" />
+    <TextView android:id="@id/apps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginTop="@dimen/content_marginHorizontalSmall" android:text="@plurals/l_apps_to_uninstall" android:layout_marginStart="@dimen/content_marginHorizontal" style="@style/SDL.TextView.Message" />
+    <TextView android:id="@id/files" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:text="@plurals/l_files_to_delete" android:layout_marginStart="@dimen/content_marginHorizontal" style="@style/SDL.TextView.Message" />
+    <TextView android:id="@id/ignore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:text="@plurals/l_items_to_ignore" android:layout_marginStart="@dimen/content_marginHorizontal" style="@style/SDL.TextView.Message" />
+    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/content_marginHorizontalSmall" android:text="_chilli@string/msg_confirm_resolve_all_question" android:maxLines="2" style="@style/SDL.TextView.Message" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_at_open" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="_chilli@string/ta_install" avast:rowSubTitle="_chilli@string/pref_antitheft_subtitle_install" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_at_smsclient" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="@string/l_at_sms_client_app_name" avast:rowSubTitle="_chilli@string/pref_antitheft_sms_client_desc" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_uninstall_anti_theft" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowTitle="_chilli@string/l_uninstallcheck" avast:rowSubTitle="_chilli@string/l_uninstallcheck" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/Row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_app" android:scaleType="fitXY" android:layout_marginEnd="8.0dip" />
+        <TextView android:layout_width="0.0dip" android:text="@string/l_app" android:maxLines="2" android:layout_weight="1.0" style="@style/RowTitle" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontalSmall" android:layout_weight="0.0" android:layout_marginStart="@dimen/content_marginHorizontalSmall">
+            <ToggleButton android:layout_gravity="center_vertical" android:id="@id/b_wifi" android:background="@drawable/xml_btn_firewall_wifi" android:layout_width="@dimen/toggle_button_width_firewall" android:layout_height="@dimen/toggle_button_height_firewall" android:layout_marginRight="@dimen/toggle_button_margin" android:textOn="" android:textOff="" android:layout_marginEnd="@dimen/toggle_button_margin" style="@style/ToggleButtonCheckstyle" />
+            <ToggleButton android:layout_gravity="center_vertical" android:id="@id/b_mobile" android:layout_width="@dimen/toggle_button_width_firewall" android:layout_height="@dimen/toggle_button_height_firewall" android:layout_marginRight="@dimen/toggle_button_margin" android:textOn="_chilli@string/l_on_3G" android:textOff="_chilli@string/l_on_3G" android:layout_marginEnd="@dimen/toggle_button_margin" style="@style/ToggleButtonCheckstyle" />
+            <ToggleButton android:layout_gravity="center_vertical" android:id="@id/b_roaming" android:background="@drawable/xml_btn_firewall_roaming" android:layout_width="@dimen/toggle_button_height_firewall" android:layout_height="@dimen/toggle_button_height_firewall" android:textOn="" android:textOff="" style="@style/ToggleButtonCheckstyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_marginTop="@dimen/content_marginVertical" android:text="" style="@style/RowTitle.Sub" />
+</LinearLayout>

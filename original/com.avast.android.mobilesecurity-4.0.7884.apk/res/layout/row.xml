@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/Row"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/l_app" style="@style/RowTitle" />
+    <TextView android:text="_chilli@string/l_na" style="@style/RowTitle.Sub" />
+</LinearLayout>

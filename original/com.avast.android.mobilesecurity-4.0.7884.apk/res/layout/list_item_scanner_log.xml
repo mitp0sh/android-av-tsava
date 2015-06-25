@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Row.WithArrow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="@color/text_problem" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_na" style="@style/RowTitle" />
+        <TextView android:id="@id/virus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_na" android:lineSpacingMultiplier="1.2" android:textIsSelectable="false" style="@style/RowTitle.Sub.White" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontalSmall" android:src="@drawable/xml_list_arrow" android:layout_marginStart="@dimen/content_marginHorizontalSmall" />
+</LinearLayout>

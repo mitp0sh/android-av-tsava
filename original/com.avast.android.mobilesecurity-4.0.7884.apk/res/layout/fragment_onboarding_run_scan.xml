@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/content_marginHorizontal" android:src="@drawable/ic_app" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_onboarding_scan_threats" />
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginTop="@dimen/content_marginVertical" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="_chilli@string/l_onboarding_scan_threats_info" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/TextView.Onboarding.Gray" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/content_marginHorizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.avast.android.mobilesecurity.app.onboarding.view.impl.AnimatedScannerView android:id="@id/onboarding_animated_scanner_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/onboarding_scan_progress" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="10.0dip" android:layout_weight="2.0" style="@style/OnboardingHorizontalProgressBar" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/onboarding_scan_application_label" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" style="@style/TextView.Onboarding.Gray" />
+    </LinearLayout>
+    <Button android:id="@id/onboarding_run_scan_button" android:layout_width="fill_parent" android:layout_margin="@dimen/content_marginHorizontal" android:text="_chilli@string/l_onboarding_run_scan" style="@style/Button.Green" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_marginHorizontal">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_or" />
+        <TextView android:textColor="@color/onboarding_hyperlink" android:layout_gravity="center" android:id="@id/onboarding_run_scan_skip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginVertical" android:text="_chilli@string/l_skip" android:layout_marginStart="@dimen/content_marginVertical" />
+    </LinearLayout>
+</LinearLayout>

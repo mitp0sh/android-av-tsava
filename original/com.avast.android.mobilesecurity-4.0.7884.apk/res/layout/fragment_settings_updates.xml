@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_edge_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_auto_update" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsAutomaticUpdates" avast:rowTitle="_chilli@string/pref_scan_autoupdate" avast:rowDAO="preference" />
+        <include layout="@layout/row_line_separator_short" />
+        <com.avast.android.mobilesecurity.ui.widget.ConnectionTypeButtons android:id="@id/r_auto_update_on" android:paddingTop="@dimen/content_marginVertical" android:paddingBottom="@dimen/content_marginVertical" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsAutoUpdateOn" avast:rowTitle="_chilli@string/pref_scan_enable_on" avast:rowSubTitle="_chilli@string/pref_scan_enable_on_hint" avast:rowDAO="preference" />
+        <include layout="@layout/row_line_separator_short" />
+        <com.avast.android.generic.ui.widget.NextRow android:id="@id/r_check_for_update" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="gSettingsCheckForUpdates" avast:rowTitle="_chilli@string/pref_scan_checkNow" />
+    </LinearLayout>
+</ScrollView>

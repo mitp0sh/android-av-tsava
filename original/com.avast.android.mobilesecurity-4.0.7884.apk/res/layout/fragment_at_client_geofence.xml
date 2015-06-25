@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_at_client_geofence_on_off" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="geofence_radius" avast:rowTitle="@string/l_geofence_on_off" avast:rowDAO="none" />
+    <LinearLayout android:orientation="vertical" android:id="@id/at_client_turn_geofence_on_settings" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_at_client_geofence_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="geofence_radius" avast:rowTitle="@string/l_geofence_radius" avast:rowDAO="none" />
+        <include layout="@layout/row_line_separator" />
+        <com.avast.android.generic.ui.widget.CheckBoxRow android:id="@id/r_at_client_send_sms_to_friend" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="send_sms_to_friend" avast:rowTitle="@string/l_send_sms_to_friend" avast:rowDAO="none" />
+    </LinearLayout>
+    <include layout="@layout/row_line_separator" />
+</LinearLayout>

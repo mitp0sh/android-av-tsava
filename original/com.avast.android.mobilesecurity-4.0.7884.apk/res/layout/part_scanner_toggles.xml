@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scanner_toggles_main_layout" android:background="@color/bg_scanner_row_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/scanner_toggles" android:background="@color/bg_scanner_row_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avast.android.mobilesecurity.ui.widget.StyledToggleButtonRow android:id="@id/scanner_scan_apps_row" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:styledToggleRowTitle="_chilli@string/l_scan_apps" avast:styledToggleRowBackground="@drawable/xml_bg_scanner_row" />
+        <View android:background="@color/bg_scanner_toggles_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" />
+        <com.avast.android.mobilesecurity.ui.widget.StyledToggleButtonRow android:id="@id/scanner_scan_files_row" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:styledToggleRowTitle="_chilli@string/l_scan_files" avast:styledToggleRowBackground="@drawable/xml_bg_scanner_row" />
+    </LinearLayout>
+    <View android:id="@id/scanner_toggles_overview" android:background="#aa000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/scanner_toggles" android:layout_alignBottom="@id/scanner_toggles" />
+</RelativeLayout>

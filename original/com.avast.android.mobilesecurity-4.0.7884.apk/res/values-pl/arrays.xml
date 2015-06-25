@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="avast_account_reporting_frequencies_names">
+        <item>1 minuta</item>
+        <item>5 minut</item>
+        <item>10 minut</item>
+        <item>15 minut</item>
+        <item>30 minut</item>
+        <item>1 godzina</item>
+    </string-array>
+    <string-array name="feedback_types">
+        <item>Własna</item>
+        <item>Zgłoszenie błędu</item>
+        <item>Zgłoszenie załamania aplikacji</item>
+        <item>Prośba od nową funkcję</item>
+    </string-array>
+</resources>

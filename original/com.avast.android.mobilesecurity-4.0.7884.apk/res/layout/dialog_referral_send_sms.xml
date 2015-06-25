@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/referral_main_layout" android:visibility="visible" layout="@layout/part_referral_summary" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/referral_overlay_layout" android:background="@drawable/xml_bg_dialog_white_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_gravity="center" android:id="@id/referral_sending_layout" android:visibility="gone" layout="@layout/part_referral_sms_sending" />
+        <include android:layout_gravity="center" android:id="@id/referral_sending_success_layout" android:visibility="gone" layout="@layout/part_referral_sms_invite_success" />
+        <include android:layout_gravity="center" android:id="@id/referral_sending_fail_layout" android:visibility="gone" layout="@layout/part_referral_sms_sending_fail" />
+    </FrameLayout>
+</FrameLayout>

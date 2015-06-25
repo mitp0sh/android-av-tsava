@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/ScrollView.Transparent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_title" android:paddingTop="@dimen/content_marginVertical" android:paddingBottom="@dimen/content_marginVertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/descr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="_chilli@string/l_na" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/TextAppearance" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_menu_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/fragment_client_receiver_part" />
+            <LinearLayout android:orientation="vertical" android:id="@id/details_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/fragment_client_send_part" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

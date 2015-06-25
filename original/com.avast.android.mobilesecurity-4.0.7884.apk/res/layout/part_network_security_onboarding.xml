@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ns_onboarding_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/ns_onboarding_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/network_security_onboarding_paragraph_margin" android:text="_chilli@string/l_network_security_onboarding_title" android:layout_centerHorizontal="true" style="@style/TextView.HomeNetworkSecurity" />
+    <TextView android:gravity="center" android:id="@id/ns_onboarding_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_network_security_onboarding_subtitle" android:layout_below="@id/ns_onboarding_title" android:layout_centerHorizontal="true" style="@style/TextView.HomeNetworkSecurity" />
+    <include layout="@layout/part_network_security_onboarding_connected_network" />
+    <include layout="@layout/part_network_security_onboarding_connecting_to_network" />
+    <include layout="@layout/part_network_security_onboarding_connection_failed" />
+    <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textStyle="bold" android:id="@id/ns_start_scan_button" android:background="@drawable/xml_btn_scanner_orange" android:layout_width="fill_parent" android:layout_height="@dimen/scanner_buttons_height" android:layout_marginLeft="@dimen/scanner_buttons_margin" android:layout_marginTop="@dimen/scanner_buttons_marginVertical" android:layout_marginRight="@dimen/scanner_buttons_margin" android:layout_marginBottom="@dimen/network_security_onboarding_paragraph_margin" android:text="_chilli@string/l_home_status_initial_scan" />
+    </RelativeLayout>
+</RelativeLayout>

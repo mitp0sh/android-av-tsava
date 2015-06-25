@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_title" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" android:layout_weight="0.0">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:text="_chilli@string/notification_manager" android:layout_weight="1.0" android:layout_marginStart="@dimen/content_marginHorizontal" style="@style/ActivityTitle" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/b_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="_chilli@string/l_clear" android:layout_weight="0.0" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/Button.Title" />
+    </LinearLayout>
+    <ListView android:id="@id/list_notifications" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <include layout="@layout/list_item_notification_empty" />
+</LinearLayout>

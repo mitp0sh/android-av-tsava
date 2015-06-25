@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Midnight">Midnat</string>
+    <string name="Noon">Middag</string>
+    <string name="common_android_wear_notification_needs_update_text">En applikation kræver en opdatering af appen Android Wear.</string>
+    <string name="common_android_wear_update_text">Denne app kan ikke køre, medmindre du opdaterer appen Android Wear.</string>
+    <string name="common_android_wear_update_title">Opdater Android Wear</string>
+    <string name="common_google_play_services_enable_button">Aktivér Google Play-tjenester</string>
+    <string name="common_google_play_services_enable_text">Denne app virker ikke, medmindre du aktiverer Google Play-tjenester.</string>
+    <string name="common_google_play_services_enable_title">Aktivér Google Play-tjenester</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Anmodning fra %1$s</string>
+    <string name="common_google_play_services_install_button">Hent Google Play-tjenester</string>
+    <string name="common_google_play_services_install_text_phone">Denne app kan ikke køre uden Google Play-tjenester, som mangler på din telefon.</string>
+    <string name="common_google_play_services_install_text_tablet">Denne app kan ikke køre uden Google Play-tjenester, som mangler på din tablet.</string>
+    <string name="common_google_play_services_install_title">Hent Google Play-tjenester</string>
+    <string name="common_google_play_services_invalid_account_text">Den angivne konto findes ikke på denne enhed. Vælg en anden konto.</string>
+    <string name="common_google_play_services_invalid_account_title">Ugyldig konto</string>
+    <string name="common_google_play_services_needs_enabling_title">En applikation kræver, at Google Play-tjenester aktiveres.</string>
+    <string name="common_google_play_services_network_error_text">Der kræves en dataforbindelse for at oprette forbindelse til Google Play-tjenester.</string>
+    <string name="common_google_play_services_network_error_title">Netværksfejl</string>
+    <string name="common_google_play_services_notification_needs_installation_title">En applikation kræver, at Google Play-tjenester installeres.</string>
+    <string name="common_google_play_services_notification_needs_update_title">En applikation kræver, at Google Play-tjenester opdateres.</string>
+    <string name="common_google_play_services_notification_ticker">Fejl i Google Play-tjenester</string>
+    <string name="common_google_play_services_unknown_issue">Ukendt problem med Google Play-tjenester.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play-tjenester, som nogle af dine applikationer er afhængige af, understøttes ikke af din enhed. Kontakt producenten for at få hjælp.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-tjenester</string>
+    <string name="common_google_play_services_update_button">Opdater</string>
+    <string name="common_google_play_services_update_text">Denne app kan ikke køre, medmindre du opdaterer Google Play-tjenester.</string>
+    <string name="common_google_play_services_update_title">Opdater Google Play-tjenester</string>
+    <string name="common_open_on_phone">Åbn på telefonen</string>
+    <string name="common_signin_button_text">Log ind</string>
+    <string name="common_signin_button_text_long">Log ind med Google</string>
+    <string name="l_world_cup_2014_promo_crouton_subtitle">Tryk for at få dit specielle VM-tilbud.</string>
+    <string name="l_world_cup_2014_promo_crouton_title">Uovervindeligt AVAST-forsvar.</string>
+    <string name="l_world_cup_2014_promo_save_30">(SAVE 33%)</string>
+    <string name="l_world_cup_2014_promo_subscription_cancel_button">Nej tak</string>
+    <string name="l_world_cup_2014_promo_subscription_premiumfeatures_button">Hvorfor Premium?</string>
+    <string name="l_world_cup_2014_promo_subscription_purchase_button_subtitle">Et års licens for</string>
+    <string name="l_world_cup_2014_promo_subscription_purchase_button_title">Beskyt mig nu</string>
+    <string name="l_world_cup_2014_promo_subscription_subtitle">Spar 33% på premium-licenser under VM.</string>
+    <string name="l_world_cup_2014_promo_subscription_title">Lad ikke online trusler gennemtrænge dit forsvar!</string>
+    <string name="last_month">I sidste måned</string>
+    <string name="midnight">midnat</string>
+    <string name="noon">middag</string>
+    <string name="older">Ældre</string>
+</resources>

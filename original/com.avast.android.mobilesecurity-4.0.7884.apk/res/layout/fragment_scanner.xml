@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_scanner_main_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/scanner_main_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/progress_bar" android:background="@color/home_status_warning" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_above="@id/stats_bar" />
+        <ImageView android:id="@id/scanner_net" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_scanner_net" android:scaleType="centerCrop" />
+        <include layout="@layout/part_scanner_run_scan" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/progress_bar_area" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_above="@id/stats_bar" android:layout_alignLeft="@id/progress_bar" android:layout_alignRight="@id/progress_bar">
+            <TextView android:textSize="@dimen/scanner_percentage_textSize" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/scan_percentage_textview" android:background="@color/bg_scanner_percentage" android:paddingLeft="@dimen/scanner_percentage_paddingHorizontal" android:paddingRight="@dimen/scanner_percentage_paddingHorizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/scanner_percentage_height" android:lines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <include layout="@layout/part_scanner_result" />
+        <include layout="@layout/part_scanner_stats" />
+    </RelativeLayout>
+    <View android:id="@id/scanner_toggles_divider" android:background="@color/home_status_warning" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <include layout="@layout/part_scanner_toggles" />
+</LinearLayout>

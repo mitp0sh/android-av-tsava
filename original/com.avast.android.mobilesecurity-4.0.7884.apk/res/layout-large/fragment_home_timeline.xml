@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_timeline_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/HomeScreen.Timeline"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/msg_timeline_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/HomeScreen.Timeline.Title" />
+    <TextView android:id="@id/msg_timeline_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalSmaller" android:text="_chilli@string/l_home_timeline_description" android:fontFamily="sans-serif-light" style="@style/HomeScreen.Timeline.Description" />
+    <Button android:id="@id/btn_timeline" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalBigger" android:text="_chilli@string/l_home_timeline_show_activity" android:layout_weight="0.0" style="@style/HomeScreen.Timeline.ShowButton" />
+</LinearLayout>

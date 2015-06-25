@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@color/popup_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:src="@drawable/logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/promo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="23.0dip" android:layout_below="@id/logo">
+            <ImageView android:id="@id/quote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/promo_dialog_ic_quote" />
+            <TextView android:textAppearance="@style/TextAppearance.Medium" android:id="@id/campaign_battery_saver_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/campaign_battery_saver_text" android:layout_toRightOf="@id/quote" android:layout_alignTop="@id/quote" android:textIsSelectable="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/quote" />
+        </RelativeLayout>
+        <include android:id="@id/product_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" android:layout_below="@id/promo_text" layout="@layout/part_campaign_battery_saver_fake_button" />
+        <CheckBox android:id="@id/campaign_checkbox" android:paddingLeft="@dimen/content_marginVertical_checkbox" android:paddingRight="@dimen/content_marginVertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="23.0dip" android:text="@string/campaign_checkbox" android:layout_below="@id/product_info" />
+        <View android:id="@id/button_line" android:background="#ff3e4954" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/campaign_checkbox" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/button_line">
+            <Button android:textStyle="bold" android:id="@id/campaign_button_gray" android:background="@null" android:layout_width="0.0dip" android:layout_marginBottom="0.0dip" android:text="_chilli@string/l_close" android:layout_weight="1.0" style="@style/Button.Gray" />
+            <Button android:textStyle="bold" android:id="@id/campaign_button_green" android:background="@drawable/xml_btn_campaign_green" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:text="@string/l_install" android:layout_weight="1.0" style="@style/Button.Green" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/content_marginHorizontal" android:src="@drawable/ic_app" />
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_onboarding_scan_threats" />
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/onboarding_scan_result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:lineSpacingExtra="@dimen/content_marginVertical" style="@style/TextView.Onboarding.Gray" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/button_padding_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <ImageView android:id="@id/onboarding_scan_result_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@id/onboarding_done_keep_ams_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="_chilli@string/l_onboarding_ams_stays_running" android:layout_weight="1.0" android:lineSpacingExtra="@dimen/content_marginVertical" style="@style/TextView.Onboarding.Gray" />
+    </LinearLayout>
+    <Button android:id="@id/onboarding_scan_done_button" android:layout_width="fill_parent" android:layout_margin="@dimen/content_marginHorizontal" style="@style/Button.Green" />
+</LinearLayout>

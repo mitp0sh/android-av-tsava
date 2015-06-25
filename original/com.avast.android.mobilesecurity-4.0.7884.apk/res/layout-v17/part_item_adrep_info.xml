@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/addon_group_name" android:background="@drawable/abs__list_selector_holo_dark" android:paddingTop="@dimen/content_marginHorizontalSmallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontalSmall" android:layout_marginTop="0.0dip" android:layout_marginRight="@dimen/content_marginHorizontalSmall" android:text="Permission Name" android:drawableLeft="@drawable/ic_show_description" android:drawablePadding="@dimen/content_marginHorizontalSmall" android:textIsSelectable="false" android:drawableStart="@drawable/ic_show_description" android:paddingStart="@dimen/content_marginHorizontalSmall" android:paddingEnd="@dimen/content_marginHorizontalSmall" android:layout_marginStart="@dimen/content_marginHorizontalSmall" android:layout_marginEnd="@dimen/content_marginHorizontalSmall" style="@style/Text.Header.2" />
+</LinearLayout>

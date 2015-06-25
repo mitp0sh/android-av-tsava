@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg_widget_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/widgetLogo" android:background="@drawable/xml_widget_button_middle" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="@dimen/content_marginHorizontalSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_widget_logo_long" />
+        </RelativeLayout>
+        <include layout="@layout/row_line_separator" />
+        <RelativeLayout android:id="@id/widgetCPUWrapper" android:paddingTop="@dimen/content_marginHorizontalSmall" android:paddingBottom="0.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/content_marginHorizontalSmall" android:paddingEnd="@dimen/content_marginHorizontalSmall">
+            <TextView android:id="@id/widgetCPULabel" android:layout_width="105.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_CPU" style="@style/WidgetWhiteText" />
+            <TextView android:gravity="end" android:id="@id/widgetCPUPercent" android:layout_width="45.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_percent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/WidgetWhiteText" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/widgetCPUPercent" android:layout_toRightOf="@id/widgetCPULabel" android:layout_toStartOf="@id/widgetCPUPercent" android:layout_toEndOf="@id/widgetCPULabel">
+                <ProgressBar android:id="@id/widgetCPUProgress" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="0.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/xml_progress_horizontal_small" android:layout_marginEnd="0.0dip" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:id="@id/widgetCPUfree" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/widgetCPUProgress" style="@style/WidgetGrayText" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/widgetMemoryWrapper" android:paddingTop="@dimen/content_marginHorizontalSmallest" android:paddingBottom="0.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/content_marginHorizontalSmall" android:paddingEnd="@dimen/content_marginHorizontalSmall">
+            <TextView android:id="@id/widgetMemoryLabel" android:layout_width="105.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_memory" style="@style/WidgetWhiteText" />
+            <TextView android:gravity="end" android:id="@id/widgetMemoryPercent" android:layout_width="45.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_percent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/WidgetWhiteText" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/widgetMemoryPercent" android:layout_toRightOf="@id/widgetMemoryLabel" android:layout_toStartOf="@id/widgetMemoryPercent" android:layout_toEndOf="@id/widgetMemoryLabel">
+                <ProgressBar android:id="@id/widgetMemoryProgress" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="0.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/xml_progress_horizontal_small" android:layout_marginEnd="0.0dip" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:id="@id/widgetMemoryfree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_chilli@string/widget_loading" android:layout_below="@id/widgetMemoryProgress" style="@style/WidgetGrayText" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/widgetSDWrapper" android:paddingTop="@dimen/content_marginHorizontalSmallest" android:paddingBottom="0.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/content_marginHorizontalSmall" android:paddingEnd="@dimen/content_marginHorizontalSmall">
+            <TextView android:id="@id/widgetSDLabel" android:layout_width="105.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_SDcard" style="@style/WidgetWhiteText" />
+            <TextView android:gravity="end" android:id="@id/widgetSDPercent" android:layout_width="45.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_percent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/WidgetWhiteText" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/widgetSDPercent" android:layout_toRightOf="@id/widgetSDLabel" android:layout_toStartOf="@id/widgetSDPercent" android:layout_toEndOf="@id/widgetSDLabel">
+                <ProgressBar android:id="@id/widgetSDProgress" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="0.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/xml_progress_horizontal_small" android:layout_marginEnd="0.0dip" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:id="@id/widgetSDfree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_chilli@string/widget_loading" android:layout_below="@id/widgetSDProgress" style="@style/WidgetGrayText" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/widgetAppWrapper" android:paddingTop="@dimen/content_marginHorizontalSmallest" android:paddingBottom="@dimen/content_marginHorizontalSmall" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/content_marginHorizontalSmall" android:paddingEnd="@dimen/content_marginHorizontalSmall">
+            <TextView android:id="@id/widgetAppLabel" android:layout_width="105.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_apps" style="@style/WidgetWhiteText" />
+            <TextView android:gravity="end" android:id="@id/widgetAppsRunning" android:layout_width="45.0dip" android:layout_height="wrap_content" android:text="_chilli@string/widget_empty" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/WidgetWhiteText" />
+        </RelativeLayout>
+        <include layout="@layout/row_line_separator" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/widgetAppManagement" android:background="@drawable/xml_widget_button_middle" android:padding="@dimen/content_marginHorizontalSmall" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_widget_appmng" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/widgetAppManagement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/application_management" style="@style/ListTitle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

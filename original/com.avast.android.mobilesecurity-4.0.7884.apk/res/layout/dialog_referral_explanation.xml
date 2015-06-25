@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" style="@style/ReferralDialog">
+        <TextView android:text="_chilli@string/l_referral_dialog_title" style="@style/TextView.ReferralDialog.Title" />
+        <TextView android:text="_chilli@string/l_referral_dialog_subtitle" style="@style/TextView.ReferralDialog.Subtitle" />
+        <TextView android:layout_marginTop="@dimen/content_marginVerticalBig" android:text="_chilli@string/l_referral_dialog_explanation_text1" style="@style/TextView.ReferralDialog.Text" />
+        <TextView android:layout_marginTop="@dimen/content_marginVerticalBig" android:text="_chilli@string/l_referral_dialog_explanation_text2" style="@style/TextView.ReferralDialog.Text" />
+        <TextView android:layout_marginTop="@dimen/content_marginVertical" android:text="_chilli@string/l_referral_dialog_explanation_text3" style="@style/TextView.ReferralDialog.Text.Sub" />
+        <Button android:id="@id/referral_explanation_choose_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalBig" android:text="_chilli@string/l_referral_dialog_choose_friends_button" style="@style/Button.Green" />
+        <TextView android:id="@id/referral_explanation_cancel" android:text="_chilli@string/l_referral_dialog_cancel" style="@style/TextView.ReferralDialog.Cancel" />
+    </LinearLayout>
+</ScrollView>

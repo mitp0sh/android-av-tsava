@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:avast="http://schemas.android.com/apk/res-auto">
+    <com.avast.android.generic.ui.widget.SelectorRow android:id="@id/r_at_client_get_data_type" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="get_data_type" avast:rowTitle="@string/l_at_client_get_data_type" avast:rowDAO="none" />
+    <include android:id="@id/data_query_limit_line_separator" layout="@layout/row_line_separator" />
+    <com.avast.android.generic.ui.widget.EditTextRow android:id="@id/r_at_client_get_data_query_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="query_limit" avast:rowTitle="@string/l_at_client_get_data_query_limit" avast:rowDAO="none" />
+    <include android:id="@id/phone_number_line_separator" layout="@layout/row_line_separator" />
+    <com.avast.android.generic.ui.widget.EditTextRow android:id="@id/r_at_client_get_data_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" avast:rowKey="phone_number" avast:rowTitle="@string/l_at_client_get_data_phone_number" avast:rowDAO="none" />
+    <include layout="@layout/row_line_separator" />
+</LinearLayout>

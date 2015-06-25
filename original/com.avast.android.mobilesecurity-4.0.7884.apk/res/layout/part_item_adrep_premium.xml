@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:layout_marginTop="@dimen/content_marginVertical" android:layout_marginRight="@dimen/content_marginHorizontal" android:layout_marginBottom="@dimen/content_marginVertical" android:text="_chilli@string/msg_adrep_dialog_premium_info" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/content_marginHorizontal" android:paddingTop="@dimen/content_marginVertical" android:paddingRight="@dimen/content_marginHorizontal" android:paddingBottom="@dimen/content_marginVertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/app_detail_adrep_more_button" android:layout_width="0.0dip" android:layout_marginRight="@dimen/content_marginHorizontal" android:text="@string/l_learn_more" android:layout_weight="1.0" android:layout_marginEnd="@dimen/content_marginHorizontal" style="@style/Button.Gray" />
+        <Button android:id="@id/app_detail_adrep_premium_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/l_dashboard_go_premium" android:layout_weight="1.0" style="@style/Button.Green" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalBig" android:text="@string/l_subscription_premium_plans_desc" android:layout_marginStart="@dimen/content_marginHorizontal" android:layout_marginEnd="@dimen/content_marginHorizontal" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVerticalBiggest" android:layout_marginBottom="@dimen/content_marginVerticalBig" android:paddingStart="40.0dip" android:paddingEnd="40.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_marginVerticalBig">
+            <ImageView style="@style/SubscriptionCheckmark" />
+            <TextView android:text="@string/l_subscription_premium_plans_features_applocking" style="@style/SubscriptionCheckmarkText" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_marginVerticalBig">
+            <ImageView style="@style/SubscriptionCheckmark" />
+            <TextView android:text="@string/l_subscription_premium_plans_features_adrep" style="@style/SubscriptionCheckmarkText" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_marginVerticalBig">
+            <ImageView style="@style/SubscriptionCheckmark" />
+            <TextView android:text="@string/l_subscription_premium_plans_features_at" style="@style/SubscriptionCheckmarkText" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView style="@style/SubscriptionCheckmark" />
+            <TextView android:text="@string/l_subscription_premium_plans_features_backup" style="@style/SubscriptionCheckmarkText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

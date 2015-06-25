@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="one">tomorrow</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">in %d mins</item>
+        <item quantity="one">in 1 min</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">in %d secs</item>
+        <item quantity="one">in 1 sec</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">yesterday</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">%d mins ago</item>
+        <item quantity="one">1 min ago</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">%d secs ago</item>
+        <item quantity="one">1 sec ago</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">in %d days</item>
+        <item quantity="one">tomorrow</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">in %d hours</item>
+        <item quantity="one">in 1 hour</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">in %d minutes</item>
+        <item quantity="one">in 1 minute</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">in %d seconds</item>
+        <item quantity="one">in 1 second</item>
+    </plurals>
+    <plurals name="l_account_status_reporting_frequency" />
+    <plurals name="l_adrep_addons_found" />
+    <plurals name="l_am_selected" />
+    <plurals name="l_and_x_more" />
+    <plurals name="l_apps_to_uninstall" />
+    <plurals name="l_filebrowser_selected">
+        <item quantity="other">%s selected</item>
+        <item quantity="one">%s selected</item>
+        <item quantity="two">%s selected</item>
+        <item quantity="few">%s selected</item>
+        <item quantity="many">%s selected</item>
+    </plurals>
+    <plurals name="l_files_to_delete" />
+    <plurals name="l_global_activity_log_subtitle_found_problems" />
+    <plurals name="l_home_shields_ignore_found" />
+    <plurals name="l_home_status_n_shields_off" />
+    <plurals name="l_home_status_problems" />
+    <plurals name="l_home_timeline_events" />
+    <plurals name="l_items_to_ignore" />
+    <plurals name="l_problems" />
+    <plurals name="l_problems_found" />
+    <plurals name="l_referral_contacts_more_friends" />
+    <plurals name="l_scan_result_problems_title" />
+    <plurals name="l_scan_result_security_risks_title" />
+    <plurals name="l_scan_result_threats_title" />
+    <plurals name="l_security_risks_found" />
+    <plurals name="l_solve_problems" />
+    <plurals name="l_subscription_remaining_time">
+        <item quantity="other">%s days remaining</item>
+        <item quantity="zero">%s days remaining</item>
+        <item quantity="one">%s day remaining</item>
+        <item quantity="two">%s days remaining</item>
+        <item quantity="few">%s days remaining</item>
+        <item quantity="many">%s days remaining</item>
+    </plurals>
+    <plurals name="l_threats_found" />
+    <plurals name="last_num_days">
+        <item quantity="other">Last %d days</item>
+    </plurals>
+    <plurals name="msg_adrep_notification_desc" />
+    <plurals name="num_days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">yesterday</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">1 hour ago</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">%d minutes ago</item>
+        <item quantity="one">1 minute ago</item>
+    </plurals>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">%d seconds ago</item>
+        <item quantity="one">1 second ago</item>
+    </plurals>
+</resources>

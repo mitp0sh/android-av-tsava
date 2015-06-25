@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/run_scan_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textStyle="bold" android:id="@id/start_scan_button" android:background="@drawable/xml_btn_scanner_orange" android:layout_width="fill_parent" android:layout_height="@dimen/scanner_buttons_height" android:layout_marginLeft="@dimen/scanner_buttons_margin" android:layout_marginTop="@dimen/scanner_buttons_marginVertical" android:layout_marginRight="@dimen/scanner_buttons_margin" android:layout_marginBottom="@dimen/scanner_buttons_marginVertical" android:text="_chilli@string/l_home_status_initial_scan" />
+        <Button android:id="@id/automatic_scan_button" android:background="@drawable/xml_btn_scanner_gray" android:layout_width="fill_parent" android:layout_height="@dimen/scanner_buttons_height" android:layout_marginLeft="@dimen/scanner_buttons_marginHorizontal" android:layout_marginTop="@dimen/scanner_buttons_marginVertical" android:layout_marginRight="@dimen/scanner_buttons_marginHorizontal" android:layout_marginBottom="@dimen/scanner_buttons_marginVertical" />
+        <TextView android:id="@id/automatic_scan_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+</RelativeLayout>

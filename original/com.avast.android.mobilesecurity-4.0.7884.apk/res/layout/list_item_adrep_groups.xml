@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="@style/Row.WithArrow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/content_marginHorizontalSmall" android:layout_marginEnd="@dimen/content_marginHorizontalSmall">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/adrep_category_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_marginHorizontal" android:src="@drawable/ic_adrep_category_5" android:layout_marginStart="@dimen/content_marginHorizontal" />
+        <ImageView android:id="@id/adrep_category_premium_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/adrep_premium_badge" />
+    </FrameLayout>
+    <TextView android:id="@id/name" android:text="Track Location" style="@style/RowTitle" />
+    <ImageView android:id="@id/adrep_warning" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="-2.0dip" android:src="@drawable/ic_scanner_result_warning" />
+    <TextView android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_marginHorizontalSmall" android:text="(25)" android:layout_weight="0.0" android:layout_alignBaseline="@id/name" android:layout_marginEnd="@dimen/content_marginHorizontalSmall" style="@style/RowTitle" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xml_list_arrow" />
+</LinearLayout>

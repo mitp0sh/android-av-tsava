@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Midnight">„Полноќ“</string>
+    <string name="Noon">„Пладне“</string>
+    <string name="last_month">Последниот месец</string>
+    <string name="midnight">„полноќ“</string>
+    <string name="noon">„пладне“</string>
+    <string name="older">Постаро</string>
+</resources>

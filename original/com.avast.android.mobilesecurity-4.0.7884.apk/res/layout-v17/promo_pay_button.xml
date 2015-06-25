@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/button_secure_me" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" style="@style/Button.BlackPromo">
+        <ProgressBar android:id="@id/promo_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_secure_me" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_world_cup_2014_promo_subscription_purchase_button_title" />
+            <org.apmem.tools.layouts.FlowLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" flow:horizontalSpacing="@dimen/content_marginHorizontalSmallest" xmlns:flow="http://schemas.android.com/apk/res-auto">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/avast_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_world_cup_2014_promo_subscription_purchase_button_subtitle" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/avast_orange" android:id="@id/new_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" android:layout_marginStart="5.0dip" />
+                <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/avast_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l_world_cup_2014_promo_save_30" android:layout_marginStart="5.0dip" />
+            </org.apmem.tools.layouts.FlowLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

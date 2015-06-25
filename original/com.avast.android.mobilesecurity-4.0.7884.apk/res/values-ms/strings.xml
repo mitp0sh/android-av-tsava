@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Midnight">Tengah malam</string>
+    <string name="Noon">Tengahari</string>
+    <string name="last_month">Bulan lepas</string>
+    <string name="midnight">tengah malam</string>
+    <string name="noon">tengahari</string>
+    <string name="older">Lebih lama</string>
+</resources>

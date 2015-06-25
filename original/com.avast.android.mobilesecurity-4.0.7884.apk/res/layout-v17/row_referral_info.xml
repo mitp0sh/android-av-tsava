@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/content_height_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:id="@id/referral_row_container_left" android:background="@drawable/xml_btn_referral_button_left" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/referral_row_add_friends_container" android:padding="@dimen/button_padding_horizontal_small" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_large" android:id="@id/referral_row_plus_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="_chilli@string/l_referral_add_friends_plus_5" android:textAlignment="center" style="@style/TextNoShadow" />
+            <TextView android:textSize="@dimen/font_medium" android:id="@id/referral_row_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_referral_add_friends_friends" android:textAlignment="center" style="@style/TextNoShadow" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/referral_row_done_adding_friends" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_green" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/referral_row_separator" android:background="@color/referral_row_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <View android:background="@color/referral_row_separator" android:layout_width="2.0px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" android:layout_marginBottom="@dimen/content_marginVertical" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/referral_row_container_right" android:background="@drawable/xml_btn_referral_button_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/button_padding_horizontal" android:paddingEnd="@dimen/button_padding_horizontal">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@android:color/white" android:gravity="start|center" android:id="@id/referral_row_plus_30_days" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="_chilli@string/l_referral_30_days" android:layout_weight="3.0" style="@style/TextNoShadow" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/referral_row_invite" android:background="@drawable/xml_btn_referral_button_invite" android:layout_width="wrap_content" android:layout_height="@dimen/referral_invite_button_height" android:text="_chilli@string/l_referral_invite_button" android:textAlignment="center" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" style="@style/TextNoShadow" />
+    </LinearLayout>
+</LinearLayout>

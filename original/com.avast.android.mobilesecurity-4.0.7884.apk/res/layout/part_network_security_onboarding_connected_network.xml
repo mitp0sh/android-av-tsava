@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ns_onboarding_connected_network" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/network_security_onboarding_paragraph_margin" android:layout_below="@id/ns_onboarding_subtitle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ns_onboarding_connected_network_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="_chilli@string/l_network_security_connected_wifi" style="@style/TextView.HomeNetworkSecurity" />
+    <TextView android:textColor="@color/avast_orange" android:id="@id/ns_onboarding_connected_network_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_marginVertical" style="@style/TextView.HomeNetworkSecurity" />
+</LinearLayout>

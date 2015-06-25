@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:id="@id/onboarding_eula_header" android:padding="@dimen/content_marginHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="_chilli@string/l_onboarding_eula_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/onboarding_eula_text" android:paddingLeft="@dimen/content_marginHorizontal" android:paddingRight="@dimen/content_marginHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextView.Onboarding.Gray" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/content_marginHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/onboarding_eula_accept_button" android:layout_width="0.0dip" android:text="_chilli@string/l_onboarding_eula_accept" android:layout_weight="1.0" style="@style/Button.Green" />
+        <View android:layout_width="@dimen/content_marginHorizontal" android:layout_height="1.0dip" />
+        <Button android:id="@id/onboarding_eula_decline_button" android:layout_width="0.0dip" android:text="_chilli@string/l_onboarding_eula_decline" android:layout_weight="1.0" style="@style/Button.Gray" />
+    </LinearLayout>
+</LinearLayout>
